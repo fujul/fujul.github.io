@@ -1,0 +1,30 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{	
+	background:#f0f0f0;
+	line-height:30px;
+	}
+
+.info{
+	width:700px;
+	height:850px;
+	background:#ffffff;
+	margin:10px auto;
+	}  
+ul {
+	padding-left:20px;
+}
+p{
+	padding:10px 0px;
+	/*line-height:50px;*/
+	}
+	
+.fio{
+		text-align:  center;
+	}    
+.about_myself{
+		padding:10px 40px;
+		font-size: 15pt;
+	} 
