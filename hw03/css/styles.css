@@ -48,27 +48,23 @@ body{
 	border-right: 1px solid #838383;
    }
 
-/*container*/
-.container1{
-	padding:0px 50px;
-	height:640px;
-}
-
 .satebar{ 
+	display:block;
 	width:250px;
-	/*margin-top:50px;*/
 	list-style: none;
 	background:white;
 	float: left;
+	padding:0px 50px;
+	height:640px;
    }
 
 .satebar a {
-		font-size: 10pt;
-		color:#7a7878;
-		/*line-height: 3;*/
-		padding:15px 30px;
-		border: 1px solid #c8c8c8;
-		display: block;	
+	font-size: 10pt;
+	color:#7a7878;
+	padding:15px 30px;
+	border: 1px solid #c8c8c8;
+	display: block;	
+	margin-top:-1px;
 	}	
 	
    
@@ -93,17 +89,14 @@ body{
  
    
 /*Footer*/
-.footer1 {
-    clear: both; /* Отмена обтекания */
-	width:970px;
-	margin:0px 50px;
-	background:white;
-	}
- 
 .menu2{ 
+    display:block;
 	height:40px;
 	list-style: none;
 	background:#e1e1e1;
+	clear: both; /* Отмена обтекания */
+	width:970px;
+	margin:0px 50px;
    }
 
 .menu2 a {
