@@ -1,0 +1,159 @@
+/*HEADER*/
+body {
+    background-image: url("../img/background1.gif") ;
+	font-family: Tahoma;
+	color: transparent;
+   }
+   
+h1{  
+	font-weight:800;
+}
+
+.site_str1{
+	-webkit-box-shadow:0 0 10px 0 #000000;
+	-moz-box-shadow:0 0 10px 0 #000000;
+	box-shadow:  0 0 10px 0 #000000;
+	background:white;
+	width:1000px;
+	height:940px;
+	margin:0 auto;
+	border-bottom: 5px solid black;
+}
+
+.logo1{
+	padding-left:30px;
+	padding-top:11px;
+	margin-bottom:-2px;
+}
+   
+.header_right{
+	color:#5aaec2;
+	padding:10px 30px ;
+	float	: right;
+}
+
+.div_contacts{
+	width:150px;
+	float	: right;
+	font-size: 12px;
+	margin-bottom:30px;
+} 
+
+ .header_right ul li a{
+	display: block;
+	font-size: 7pt;
+	color:#5aaec2;
+}
+ .header_right ul li {
+	float	: left;
+	width:60px;
+}
+
+.header_right ul{
+	clear:right;
+	text-align:  center;
+}
+
+.img1{
+	margin-left:-1px;
+	border: 1px solid #128aa7;
+	font-family:Tahoma;
+}
+/*треугольник*/
+.tr{
+	float:right;
+	border-color: #fff #303030 #303030 #303030;
+	border-style: solid;
+	border-width: 6px 3px 0px 3px;
+	height: 0;
+	width: 0;
+	margin-top:10px;
+	margin-left:15px;
+}
+
+/*Menu*/
+#ul_menu{
+	float:left;
+	width:100%;
+	list-style:none;
+	margin-top:-1px;
+	background:#303030;
+	display:block;
+}
+
+#ul_menu li{
+float:left;
+position:relative;
+margin-left:40px;
+display:block;
+}
+
+#ul_menu li a{
+	font-size: 14px;
+	display:block;
+	white-space:nowrap;
+	padding:5px 10px;
+	color:white;
+	background:#303030;
+	text-decoration:none;
+	}
+	
+/*ВЫПАДАЮЩЕЕ МЕНЮ*/
+#ul_menu ul{
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
+	opacity:0; /* Устанавливаем начальное состояние прозрачности */
+	-webkit-box-shadow: 0 0 5px #000000;
+	-moz-box-shadow: 0 0 5px #000000;
+	box-shadow: 0 0 5px #000000;
+}
+
+#ul_menu ul li{
+	float:none;
+	margin-left:0px;
+}
+
+#ul_menu ul a{
+	display:block;
+	padding-right:40px;
+}
+
+#ul_menu li:hover ul{
+	left:0; 
+	opacity:1; 
+}
+
+/*columns*/
+.columns {
+	width: 1000px; 
+	background: url("../img/block.gif") repeat-y; 
+	float: right;
+	color:#707771;
+	
+   }
+ .column1 {
+	font-size: 11pt;
+	text-align: center;
+	line-height:23px;
+	width: 190px;
+	float: left;
+	padding-left:5px;
+ }
+ .column2 {
+	font-size: 11pt;
+	line-height:23px;
+	width: 190px;
+	text-align: center;
+	float: right;
+	padding-right:5px;
+ }
+
+.bot {
+	font-size: 9pt;
+	width: 100%;
+	text-align: center;
+	margin-top:5px;
+	margin-bottom:5px;
+	color:#cee3ec;
+ }

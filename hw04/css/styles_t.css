@@ -1,0 +1,129 @@
+ a,p {
+		text-decoration: none;
+		font-family: 'Open Sans', sans-serif;
+		font-style: normal;
+	}
+	
+body{
+	background:#f9f9f9;
+	}
+
+/*Header*/
+ 
+.site_str1{
+	    position: absolute;
+		width:1070px;
+		height:950px;
+		margin: auto;
+		top: 0; left: 0; bottom: 0; right: 0;
+		border-left: 1px solid #dbdbdb;
+		border-right: 1px solid #dbdbdb;
+		background:white;
+	}    
+.header1{
+		width:970px;
+		height:130px;
+		margin:40px 50px;
+	}  
+.menu1{ 
+	height:40px;
+	list-style: none;
+	margin-top:50px;
+	background:#4b4b4b
+   }
+
+.menu1 a {
+		font-size: 11pt;
+		line-height: 2.6;
+		color:white;
+	}	
+   
+ .menu1 li {
+    display: inline; /* Отображать как строчный элемент */
+    padding:10px 30px 
+   }
+ .menu1 li:hover{
+	background:#313131;
+	border-left: 1px solid #838383;
+	border-right: 1px solid #838383;
+   }
+
+/*container*/
+.container1{
+	padding:0px 50px;
+	height:640px;
+}
+
+.satebar{ 
+	width:250px;
+	/*margin-top:50px;*/
+	list-style: none;
+	background:white;
+	float: left;
+   }
+
+.satebar a {
+		font-size: 10pt;
+		color:#7a7878;
+		/*line-height: 3;*/
+		padding:15px 30px;
+		border: 1px solid #c8c8c8;
+		display: block;	
+	}	
+	
+   
+.sitebar, .content { 
+	position: absolute; 
+	}
+.content {
+ left: 340px; 
+ width:600px;
+	}
+
+ 
+ .satebar a:hover{
+	background-color: #f9f9f9;
+	font-weight:800;
+   }
+ .content p {
+		font-size: 10pt;
+		line-height: 1.8;
+	}	
+
+ 
+   
+/*Footer*/
+.footer1 {
+    clear: both; /* Отмена обтекания */
+	width:970px;
+	margin:0px 50px;
+	background:white;
+	}
+ 
+.menu2{ 
+	height:40px;
+	list-style: none;
+	background:#e1e1e1;
+   }
+
+.menu2 a {
+		font-size: 10pt;
+		line-height: 2.6;
+		color:#444444;
+	}	
+
+ .menu2 li {
+    display: inline; /* Отображать как строчный элемент */
+    padding:10px 30px 
+   }
+   
+ .menu2 a:hover{
+	text-decoration: underline;
+   }
+
+  .menu2 .all {
+		font-family: 'Open Sans',sans-serif;
+		font-style: normal;
+		font-size: 10pt;
+		padding:10px 0px 10px 300px; 
+	}
