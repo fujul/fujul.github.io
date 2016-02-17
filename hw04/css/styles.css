@@ -16,7 +16,7 @@ h1{
 	box-shadow:  0 0 10px 0 #000000;
 	background:white;
 	width:1000px;
-	height:940px;
+	height:auto;
 	margin:0 auto;
 	border-bottom: 5px solid black;
 }
@@ -127,6 +127,9 @@ display:block;
 
 /*columns*/
 .columns {
+	-webkit-box-shadow:0 0 10px 0 #000000;
+	-moz-box-shadow:0 0 10px 0 #000000;
+	box-shadow:  0 0 10px 0 #000000;
 	width: 1000px; 
 	background: url("../img/block.gif") repeat-y; 
 	float: right;
