@@ -1,6 +1,7 @@
 /*HEADER*/
 body {
-    background-image: url("../img/background1.gif") ;
+        background: url("../img/background1.gif") repeat-x;
+	background-color: #0c739f;
 	font-family: Tahoma;
 	color: transparent;
    }
@@ -155,7 +156,5 @@ display:block;
 	font-size: 9pt;
 	width: 100%;
 	text-align: center;
-	margin-top:5px;
-	margin-bottom:5px;
 	color:#cee3ec;
  }
