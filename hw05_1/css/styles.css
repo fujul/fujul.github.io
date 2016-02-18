@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'Helvetica Neue Cyrlight';
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/helveticaneuecyr-light-webfont.woff2') format('woff2'),
+    url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
+    url('../fonts/helveticaneuecyr-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background-color: #bfbfbf ; /*rgb(191,191,191)*/
+	color:white;
+   }
+/*HEADER*/
+
+.site_str1 {	
+	font-family: "Helvetica Neue Cyrlight",Tahoma;
+	margin:auto auto;
+	-webkit-box-shadow:0 0 10px 0 #000000;
+	-moz-box-shadow:0 0 10px 0 #000000;
+	box-shadow:  0 0 10px 0 #000000;
+	width:1215px;
+	height:1020px;
+	/*text-align:center;*/
+   }
+.flag{
+	float:left;
+	padding-left:10px;
+}
+   
+/*menu*/
+.menu_header{
+	overflow: hidden;
+	position:relative;
+	margin:auto;
+	padding-right:20px;
+	width:auto;
+	list-style:none;
+	background:#085a9e;
+	display:block;
+	
+}   
+
+.menu_header li{
+z-index:1;
+float:right;
+position:relative;
+display:block;
+padding:5px 10px;
+color:white;
+background:#085a9e;
+font-size: 15px;
+height:20px;
+}
+
+.menu_header li a{	
+	padding:5px;
+	color:#60b5ed;
+	text-decoration:none;
+	}
+
+.menu_header li .podch{
+	color:white;
+	}
+.menu_header li #id1{
+	text-decoration: underline;
+}   
+
+.menu_header li #id2{
+	text-decoration: underline;
+}
+
+.menu_header li:hover{
+	background-color:#4eabda;
+	color:white;
+}
+.menu_header li a:hover{
+	color:white;
+}
+
+.menu_header #li_act{
+	background-color:#4eabda;
+}
+
+.menu_header #li_polosa{
+	border-left: 1px solid #60b5ed;	
+}
+
+.centr{
+	position:relative;
+}
+/*forma*/
+.forma{
+	z-index:1;
+	position:absolute;
+	top: 20%; 
+	left: 25%;
+	width:560px;
+	height:610px;
+	background:rgb(91,91,91);	
+	background:rgba(91,91,91,0.7);		
+	text-align:center;
+}
+
+.forma input[name="text_edit"]{
+	margin:0 auto;
+	margin-top:20px;
+	padding:10px;
+	font-size:15px;
+	display:block;
+	width:260px;
+	background:#0f0f0f;
+	color:white;
+	border:none;
+	border-bottom: 2px solid #494847;
+}
+
+.forma input[name="text_edit"]:focus{
+background:#1b5288;
+border:none;
+-webkit-box-shadow:0 0 10px 0 #689bcc;
+-moz-box-shadow:0 0 10px 0 #689bcc;
+box-shadow:  0 0 10px 0 #689bcc;
+}
+
+.forma input[name="button2"]{
+-moz-border-radius:  5px; /* Firefox */
+-webkit-border-radius:  5px; /* Safari 4 */
+border-radius:  5px; /* IE 9, Safari 5, Chrome */
+background: -moz-linear-gradient(#53b1dd,#2e7ac4);
+background: -webkit-gradient(linear, 0 0, 0 100%, from(#53b1dd), to(#2e7ac4));
+padding: 6px 7px;
+border: 1px solid #3686ca;
+width:150px;
+font-size:15px;
+color:white;
+display:block;
+margin:20px auto;
+float:none;
+}
+
+/*Checkbox*/
+.forma .check1{
+	overflow: hidden;
+	margin:20px auto 0px auto;
+	display: inline-block;
+	text-align:center;
+	position: relative;
+	width:auto;
+	font-size:15px;
+}
+
+.forma p{
+	text-align:center;
+	font-size:12px;
+	
+}
+.forma h1{
+	margin-top:12px;
+	text-align:center;
+	font-size:25px;
+}
+ hr {
+    border: none; 
+    color: white; 
+    background-color: white;
+    height: 2px; 
+   }
+   
+/*line ou line*/
+.line_ou{
+	width:100%;
+}
+.line_ou hr{
+	float:left;
+	width:47%;
+	background-color:#999999;
+	height: 1px; 
+}
+.line_ou p{
+	font-size:16px;
+	float:left;
+	width:6%;
+	margin-top:1px;
+	color:#999999;
+}
+
+/*fb*/ 
+
+.button11{
+   width: 40px;
+   height: 35px;    
+   border:0;
+    padding:0;
+    display: block;
+    float: left;
+    position: relative;
+	margin:20px -2px;
+}   
+.button12{
+   width: 240px;
+   height: 35px; 
+   border:0;
+    padding:0;
+    display: block;
+    float: left;
+    position: relative;
+	margin:20px -2px;
+}  
+
+ 
+.but {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+
+/*</forma>*/
+
+
