@@ -17,16 +17,11 @@ table{
 	box-shadow: 0 0 5px #000000;
 	border-bottom-style:none;
 	border:none;
-
-
-
 }
 
 td{
 	border-bottom:7px solid black;
 	border-right:7px solid black;
-/*	width:55px;
-	height:45px;*/
 }
 
 .td1{
@@ -41,14 +36,15 @@ td{
 .tr1{
 	height:50px;
 }
-.tr2,.tr3,.tr4,.tr5{
+.tr4{
+	height:130px;
+}
+.tr2,.tr5{
 	height:65px;
 	}	
-.tr6{
-	height:60px;
-	}	
+
 .tr7{
-	height:55px;
+	height:60px;
 	}	
 .tr8{
 	height:30px;
@@ -57,15 +53,18 @@ td{
 	height:30px;
 	}	
 
-.td10,.td100{ 
-width:55px;	
+.td51,.td52{ 
+width:60px;	
 }
 .td8{ 
 width:80px;	
 }
+.td4{
+	height:130px;
+}
 	
 /*отмена крайних линий*/
-.td21, .td18, .td13,.td9,.td3,.td6{
+.td21, .td18, .td13,.td3,.td6,.td8,.td54{
 	border-right-style:none;
 	}	
 .td19,.td21,.td14 {
@@ -81,7 +80,7 @@ background:#ffff64;
 background:#ff6143;	
 }
 
-.td10,.td100,.td110,.td120, .td20{
+.td110,.td120, .td20, .td51,.td52{
 background:#242424;	
 }	
 .td18{
