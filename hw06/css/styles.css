@@ -1,4 +1,4 @@
- 
+﻿ 
 /*HEADER*/
 body {
 	background-color: #bfbfbf;
@@ -433,7 +433,7 @@ footer{
 }
 /*MENU FOOTER*/
 #ul_menu_footer{
-	width:330px;
+	width:350px;
 	list-style:none;
 	display:block;
 	margin:0 auto;
