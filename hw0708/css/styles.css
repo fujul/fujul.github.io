@@ -1,0 +1,539 @@
+﻿@font-face {
+    font-family: 'League Gothic Regular';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*треугольник*/
+.tr{
+	position:absolute;
+	top:100%;
+	left:70%;
+	bottom:0;
+	right:0;
+	border-color: #ffffff #f9f9f9 #f9f9f9 #f9f9f9;
+	border-style: solid;
+	border-width: 18px 12px 0px 12px;
+	height: 0;
+	width: 0;
+}
+
+.radio{
+	display:block;
+	clear:both;
+	overflow:hidden;
+	text-align:center;
+}
+
+.radio a{
+	margin:20px 0;
+	display:inline-block;
+	text-decoration:none;
+	/*float:left;*/
+	height:20px;
+	width:20px;
+}
+.article2 .radio a{
+	height: 20px;
+	width:20px;
+}
+.radio .krug2{
+	background:url(../img/icons/radio2.png) -21px 0 no-repeat; 
+}
+.radio .krug1{
+	background: url(../img/icons/radio2.png) 0 0 no-repeat;}
+
+.radio .krug12{
+	background:url(../img/icons/radio1.png) -21px 0 no-repeat; 
+}
+.radio .krug11{
+	background: url(../img/icons/radio1.png) 0 0 no-repeat;}
+
+
+
+/*HEADER*/
+body {
+	background-color: #bfbfbf;
+	font-family: 'Open sans',Tahoma;
+
+   }
+
+   
+.site{
+	font-family: 'Open sans',Tahoma; 
+	-webkit-box-shadow:0 0 10px 0 #000000;
+	-moz-box-shadow:0 0 10px 0 #000000;
+	box-shadow:  0 0 10px 0 #000000;
+	background:white;
+	width:auto;
+	margin:0 auto;
+	background: url(../img/pic_top.jpg) center center no-repeat fixed ; 
+	background-size:cover;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.clearfix:after{
+	content:'';
+	clear:both;
+	display:block;
+}
+/*HEADER*/
+.header{
+	margin:100px auto;
+	position:relative;
+	width:auto;
+	height:100%;
+	padding-top:20%;
+	padding-bottom:30%;
+}
+
+.divlogo{
+	padding-top:10px;
+	margin:0 auto;
+	max-width:960px;
+	width:auto;
+	}
+
+.linklogo{
+	display:block;
+	float:left;
+	width:25%;
+}
+.logo{
+	display:block;
+}
+
+.menu{
+	font-family:'League Gothic Regular',Tahoma; 
+	font-size:24px;
+	width:75%;
+	list-style:none;
+	display:block;
+	float:right;
+}
+
+
+.menu__item{
+	display:inline-block;
+}
+
+.menu__link{
+	margin-top:20px;
+	padding-top:5px;
+	margin-left:50px;
+	display:block; 
+	color:white;
+	text-decoration:none;
+	}
+
+.menu__item:hover .menu__link {
+	border-bottom:1px solid #edbfff;
+}
+
+.diviphone{
+	width:100%;
+	position:absolute;
+	text-align:center;
+	background:rgb(0,0,0);
+	background-color:rgba(0,0,0,0.5);
+	top:32%;
+	bottom:0;
+	left:0;
+	right:0;
+	height:60%;
+}
+
+.aside_right{
+	display:block;
+	height:100%;
+	position:relative;
+	float:right;
+	width: 25px;
+	margin-left:15%;
+}
+.aside_left{
+	display:block;
+	float:left;
+	height:100%;
+	position:relative;
+	width: 25px;
+	margin-right:15%;
+}
+.linkarrow_right{
+	display:block;
+	position:absolute;
+	margin:auto 0;
+	top:0;
+	bottom:0;
+	left:0;
+	height: 40px;
+	width: 200px;
+	background: url(../img/icons/two_arrows.png) -26px 0 no-repeat;
+}
+.linkarrow_left{
+	display:block;
+	position:absolute;
+	margin:auto 0;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	height: 40px;
+	width: 25px;
+	background: url(../img/icons/two_arrows.png) 0 0 no-repeat;
+}
+
+.diviphonecenter{
+	float:left;
+	max-width:1020px;
+	width:100%;
+	height:auto;
+	margin:auto;
+	position:absolute;
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	overflow:hidden;	
+	
+}
+
+.section{
+	float:left;	
+	display: block;
+	width:55%;
+	text-align:left;
+	height:auto;
+	margin:auto ;
+	overflow:hidden;
+	padding-left:50px;
+    padding-right:10px;
+}
+
+.h1{
+	font-family:'League Gothic Regular',Tahoma; 
+	color:#fefefe;
+	font-size:60px;
+	white-space: nowrap;
+    overflow: hidden; 
+}
+.h2{
+	font-family:'League Gothic Regular',Tahoma; 
+	color:#edbfff;
+	font-size:32px;
+	white-space: nowrap; 
+    overflow: hidden; 
+	
+}
+.p{	
+	font-family:'Open sans',Tahoma;
+	color:#fefefe;
+	font-size:18px;
+	line-height:30px;
+    overflow: hidden; 
+}
+/*main*/
+	
+.main{
+	margin:0 auto;
+	width:100%;
+}	
+.article1{
+	margin:0 auto;
+	width:100%;
+	background-color:#745082;
+	background: linear-gradient( to top left, #322539, #745082);
+	color:#ffffff;
+}
+
+.article3{
+	margin:0 auto;
+	width:100%;
+	background-color:#ececec;
+	color:#b6b6b6;
+}
+
+.block {
+	position:relative;
+	margin:0 auto;
+	max-width: 960px;
+	clear: both;
+	padding: 5% 0;
+	width:100%;}
+ 
+.block:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+	
+.article1 .block_inner{
+	float:left;
+	width:33%;
+}
+.article3 .block_inner{
+	float:left;
+	width:33%;
+}
+
+.linksection1{
+	display:block;
+	float:left;
+	height: 40px;
+	width:30px;
+background: url(../img/icons/section.png) 0px 0 no-repeat;}
+
+.linksection2{
+	display:block;
+	float:left;
+	height: 40px;
+	width: 35px;
+background: url(../img/icons/section.png) -30px 0 no-repeat;}
+.linksection3{
+	display:block;
+	float:left;
+	height: 40px;
+	width: 30px;
+background: url(../img/icons/section.png) -65px 0 no-repeat;}
+	
+.block_content a{
+	display:block;
+	text-decoration:none;
+	color:white;
+	width:100%;
+	text-align:right;
+	font-family:'League Gothic Regular',Tahoma; 
+	font-size:18px;
+	/*float:right;*/
+}	
+
+.block h3 {
+	font-family:'League Gothic Regular',Tahoma; 
+	font-size:30px;
+	color:#ffffff;
+	}
+.block p {
+  font-size:16px;
+  line-height:30px;
+  margin:10px 0;
+  overflow:hidden;
+  max-height:202px;
+  }
+
+.block_content{
+  clear: right;
+  margin:0 10%;
+}
+  
+  .block_content h1,
+  .block_content h3,
+  .block_content h6,
+  .block_content p,
+  .block_content a{ 
+    margin-left: 20px; }
+
+.article2{
+	margin:0 auto;
+	width:100%;
+	background-color:#f9f9f9;
+	color:black;
+	position:relative;
+}
+.block h6{
+	font-weight:900;
+	}
+.article3 .block h6{
+	font-style: italic;
+	font-size: 14px;
+	color:#d0d0d0;}
+
+.article3  h1 span{
+	/*color:#454545;*/
+	color:#000000;
+}
+.article2  .block h3{
+	color:#454545;
+}
+.article3  .block h3{
+	color:#454545;
+}
+.block h1{
+font-family:'League Gothic Regular',Tahoma; 
+font-size:48px;
+}
+	
+.article2 .block_inner{width:47%;float:left;	margin-right:1%;margin-left:1%; position:relative;  padding:5px 0;}
+
+.block img{float:left;}
+.block span {color:#f2d0ff;}
+.article2 .block_w{
+	position:relative;
+	padding:10px 0;
+	margin:-10px 0;
+	background:#ffffff;
+	width:100%;}
+.article2_block1 img{
+	display:block;
+	position:absolute;
+	left:-20px;
+	top:10px;}
+.article2 .hr{color:#e6e6e6;}
+.article2 h6{ white-space: nowrap; margin-top:10px;margin-bottom:0px; }	
+.article2 .article2_block2 p{ white-space: nowrap; margin-top:0;margin-bottom:30px; }
+.article2 .article2_block2 a{color:black;}
+.article2 .article2_block2 .more2{display:none;}
+.article2 .article2_block2 .more3{display:none;}
+.article2 .article2_block3{display: table;width:16%;float:left;height:70px;margin:0;text-align:center;}
+.article2 .article2_block3 a{display: table-cell;vertical-align: middle;text-align:center;height:100%;padding:0 23%;}
+
+
+/*FOOTER*/
+.footer{
+	margin:0 auto;
+	width:100%;
+	background: url(../img/bottom_band.jpg) 0 0 repeat-x; 
+	overflow:hidden;
+}
+.footer .block{padding:0;}
+.menu_bottom{
+	width:80%;
+	margin-bottom:20px;
+	font-size:20px;
+	float:left;
+}
+.footer .pingbull{
+	display:block;
+	width:20%;
+	margin:auto;
+	font-size:12px;
+	line-height:70px;
+	color:#ffffff;
+}
+
+.pingbull span{
+	font-weight:900;
+	color:#ffffff;
+}
+
+.iphone{
+	margin-left:60%;
+	margin-top:-3%;
+	display:block;
+	z-index:3;
+	position:absolute;
+	width: 25%;
+}
+
+
+@media all and (min-width: 481px) and (max-width: 768px)  {
+.footer .menu_bottom{width:auto;clear:both; margin:0 6%;}
+.footer .pingbull{width:100%;text-align:right;line-height:30px;}
+.linklogo{width:100%}	
+.menu{
+	width:100%;
+	float:left;
+	margin-top:0;}
+.menu__link{
+	margin-top:0;
+	margin-left:0px;
+	margin-right:50px;
+}
+
+.h1{
+font-size:50px;}
+.h2{
+font-size:24px;}
+.p{
+font-size:16px;}
+
+.block h3 {
+	font-size:26px;
+}
+.article2 .article2_block2 .more1{display:none;}
+.article2 .article2_block2 .more3{display:none;}
+.article2 .article2_block2 .more2{display:block;}
+.tr{display:none;}
+}
+
+@media all and (min-width: 321px) and (max-width: 480px)  {
+.footer  .menu_bottom{width:100%; margin:0 2%;}
+.footer  .menu_bottom a{margin:10%; padding:0;}
+.footer .pingbull{width:100%;text-align:center;line-height:30px;}
+.block .block_inner{
+	width:100%;}
+.article2 .article2_block3{width:33%;}
+.block h3 {font-size:22px;}
+.h1{
+font-size:40px;}
+.h2{font-size:20px;}
+.tr,.p{display:none;}
+.linklogo{clear:both;width:100%;}	
+.logo{margin:0 auto;}
+.divlogo{position:relative;}
+.divlogo .menu{
+	position:absolute;
+	clear:both;
+	width:40%;
+	top:700%;
+	left:30%;
+	text-align:center;
+	z-index:4;
+	border:1px solid #000000;}
+.divlogo .menu__item{
+	float:left;
+	display:block;
+	width:100%;
+	padding:5px 0;
+	background-color:rgb(62,49,70); 
+	background-color:rgba(62,49,70,0.8); 
+	border-bottom:1px solid #36283e;
+	border-top:1px solid #523e5a;}
+.divlogo .menu__link{
+	display:inline;
+	margin:0;
+	padding:0;
+	}
+.divlogo .menu #a1{	
+	background-color:rgb(44,35,50); 
+	background-color:rgba(44,35,50,0.9); 
+	border-bottom:2px solid #edbfff;
+}
+.article2 .article2_block2 .more1{display:none;}
+.article2 .article2_block2 .more2{display:none;}
+.article2 .article2_block2 .more3{display:block;}
+
+}
+
+@media all and (max-width: 320px)  {
+.block .block_inner{
+	width:100%;
+}
+.article2 .article2_block3{width:50%;}
+.section{
+	width:100%;
+	clear:both;
+}
+.h1{font-size:30px;}
+.h2{font-size:18px;}
+
+.menu__item{display:none;}
+.menu{width:100%;clear:both;}
+#a0{display:block;margin:5px 0; text-align:center;}
+#a0 a{display:inline;margin:0;}
+
+.menu_bottom,.tr,.article3,.p,.linkiphone{display:none;}
+
+.block h3 {font-size:20px;}
+.linklogo{clear:both;width:100%;}	
+.logo{margin:0 auto;}
+.article2 .article2_block2 .more1{display:none;}
+.article2 .article2_block2 .more2{display:none;}
+.article2 .article2_block2 .more3{display:block;}
+.footer .pingbull{width:100%;text-align:center;}
+}
