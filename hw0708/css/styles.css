@@ -419,7 +419,8 @@ font-size:48px;
 .article2 .article2_block3 a{display: table-cell;vertical-align: middle;text-align:center;height:100%;padding:0 23%;}
 .article2 .article2_block3 .a5{display: table-cell;vertical-align: middle;text-align:center;height:100%;padding:0;}
 .article2 .block{margin-bottom:0;padding-bottom:0;padding-top:0;}
-.article2 .block{padding-top:80px;}
+.article2 .article2_block1{padding-top:80px;}
+.article2 .article2_block2{padding-top:80px;}
 /*FOOTER*/
 .footer{
 	margin:0 auto;
@@ -503,6 +504,7 @@ font-size:16px;
 }
 
 @media all and (min-width: 321px) and (max-width: 480px)  {
+.article2 .article2_block2{padding-top:10px;}
 .section{width:45%}
 .article3 .block h1,.article3 .block  h6{display:none;}
 .newcat{display:inline-block;}
@@ -583,6 +585,7 @@ font-size:40px;}
 }
 
 @media all and (max-width: 320px)  {
+.article2 .article2_block2{padding-top:10px;}
 /*menu*/
 .divlogo .menu{
 	border-radius:15px/15px;
