@@ -1,4 +1,4 @@
-﻿/*article,footer,aside,header,section{display:block;}*/
+﻿article,footer,aside,header,section{display:block;}
 @font-face {
     font-family: 'League Gothic Regular';
     src: url('../fonts/leaguegothic-regular-webfont.eot');
@@ -224,7 +224,7 @@ body {
 	text-align:left;
 	height:auto;
 	overflow:hidden;
-	padding-left:50px;
+	padding-left:45px;
     padding-right:10px;
 }
 
@@ -246,8 +246,8 @@ body {
 .p{	
 	font-family:'Open Sans light','Open sans',Tahoma;
 	color:#fefefe;
-	font-size:18px;
-	line-height:30px;
+	font-size:16px;
+	line-height:15px;
     overflow: hidden; 
 }
 /*main*/
@@ -336,8 +336,8 @@ background: url(../img/icons/section.png) -65px 0 no-repeat;}
   font-size:16px;
   line-height:22px;
   margin:10px 0;
-  overflow:hidden;
-  max-height:202px;
+  /*overflow:hidden;*/
+  /*max-height:202px;*/
   }
 
 .block_content{
@@ -410,8 +410,8 @@ font-size:48px;
 	left:-20px;
 	top:10px;}
 .article2 .hr{color:#e6e6e6;margin:0;}
-.article2 h6{ white-space: nowrap; margin-top:10px;margin-bottom:0px; }	
-.article2 .article2_block2 p{ white-space: nowrap; margin-top:0;margin-bottom:30px; }
+.article2 h6{/*white-space: nowrap;*/ margin-top:10px;margin-bottom:0px; }	
+.article2 .article2_block2 p{ /*white-space: nowrap;*/ margin-top:0;margin-bottom:30px; }
 .article2 .article2_block2 a{color:black;}
 .article2 .article2_block2 .more2{display:none;}
 .article2 .article2_block2 .more3{display:none;}
@@ -465,6 +465,7 @@ font-size:48px;
 .article3 .block h1,.article3 .block  h6{display:none;}
 .newcat{display:inline-block;}
 .block h3 {font-size:24px;}
+.block p {font-size:14px; line-height:14px;}
 .recent{font-size:24px;}
 .ping{font-size:30px;}
 .footer .menu_bottom{width:100%;clear:both; }
@@ -486,13 +487,14 @@ font-size:48px;
 	margin:0;
 	padding:0;
 }
+.diviphonecenter{margin:1% 0;}
 .section{width:50%}
 .h1{
-font-size:48px;}
+font-size:42px;}
 .h2{
-font-size:24px;}
+font-size:18px;}
 .p{
-font-size:16px;
+font-size:14px;
 /*line-height:25px;*/}
 
 .block h3 {
@@ -506,9 +508,11 @@ font-size:16px;
 
 @media all and (min-width: 321px) and (max-width: 480px)  {
 .article2 .article2_block2{padding-top:10px;}
-.section{width:45%}
+.diviphonecenter{margin:10% 0;}
+.section{width:50%}
 .article3 .block h1,.article3 .block  h6{display:none;}
 .newcat{display:inline-block;}
+.block p {font-size:14px; line-height:14px;}
 .block h3 {font-size:24px;}
 .recent{font-size:30px;}
 .ping{font-size:30px;}
@@ -517,8 +521,8 @@ font-size:16px;
 .article2 .article2_block3{width:32%;}
 .block h3 {font-size:22px;}
 .h1{
-font-size:40px;}
-.h2{font-size:20px;}
+font-size:30px;}
+.h2{font-size:16px;}
 .tr,.p{display:none;}
 .linklogo{clear:both;width:100%;}	
 .logo{margin:0 auto;}
@@ -640,13 +644,14 @@ font-size:40px;}
 	clear:both;
 }
 .h1{font-size:30px;}
-.h2{font-size:18px;}
+.h2{font-size:16px;}
 
 
  
 .menu_bottom,.tr,.article3,.p,.linkiphone{display:none;}
 
 .block h3 {font-size:20px;}
+.block p {font-size:14px; line-height:14px;}
 .linklogo{clear:both;width:100%;}	
 .logo{margin:0 auto;}
 .article2 .article2_block2 .more1{display:none;}
