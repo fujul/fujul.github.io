@@ -1,5 +1,14 @@
+function user_exists() {
+	if (name === '') return false;
+	for(i = 0; i < arr.length; i++){
+	  if (arr[i].toLowerCase() === name.toLowerCase()){
+		  return true;
+	  }
+	}
+	return false;
+}
+
 var arr = [];
-var flag = false;
 
 for(var i = 0; i < 5; i++){
   arr.push(prompt('Введите в список имя '+(i+1)+' :', '')+'');
@@ -7,13 +16,6 @@ for(var i = 0; i < 5; i++){
 
 var name = prompt('Введите имя пользователя:')+'';
 
-for(i = 0; i < arr.length; i++){
-  if (arr[i].toLowerCase()===name.toLowerCase()){
-	  alert(name+', вы успешно вошли.');
-	  flag = true;
-	  break;
-  } 
-}
+if (user_exists(name, arr)) alert(name+', вы успешно вошли.'); else alert('ОШИБКА! Имени '+name+' в списке нет!'); 
 
-if (flag==false) {alert('ОШИБКА! Имени '+name+' в списке нет!');}
 
