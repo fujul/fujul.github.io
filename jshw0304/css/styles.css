@@ -1,0 +1,7 @@
+.btn-default{
+	display:block;
+	background-color:#cfe2f3;
+	border-width:2px;
+	border-color:black;
+	margin:50px auto;
+}
