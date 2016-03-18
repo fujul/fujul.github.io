@@ -1,0 +1,54 @@
+body{font-family:Sans Serif, Georgia, Times, "Times New Roman";
+	font-weight:900;
+	text-align:center;
+	font-size:500%;
+	}
+.taymer{
+	margin-top:40px;
+	border-width:5px;
+  border-radius: 50px;			 
+	border: 15px solid black;
+	background-color:#e1e3ff;
+	}
+.taymer h1{
+ margin:0;}
+.taymer p{
+	margin:0;
+	text-align:right;
+	font-size:30%;
+	margin-right:15%;}
+button{
+	margin-top:20px;
+	border: 15px solid black;
+	border-radius: 200px;
+	padding:0 40px;
+	width:330px;
+}
+
+.button2:hover{
+	filter: contrast(2);
+}
+.button1:hover{
+	filter: contrast(2);
+}
+.button3:hover{
+	filter: contrast(2);
+}
+
+
+.button2{
+	float:left;
+	display:none;
+	background-color: #2f9fea;
+	background: linear-gradient(to top left, #2f8ece 50%, #2f9fea 50%);
+}
+.button1{
+	float:left;
+	background-color: #14a714;
+	background: linear-gradient(to top left, #129212 50%, #14a714 50%);
+}
+.button3{
+	float:right;
+	background-color: #860e0e;
+	background: linear-gradient(to top left, #860e0e 50%, #a41717 50%);
+}
