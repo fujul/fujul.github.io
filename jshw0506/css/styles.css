@@ -25,28 +25,13 @@ button{
 	width:330px;
 }
 
-.button2:hover{
+button:hover{
 	-webkit-filter: contrast(2);
 	-moz-filter: contrast(2);
 	-o-filter: contrast(2);
 	-ms-filter: contrast(2);
 	filter: contrast(2);
 }
-.button1:hover{
-	-webkit-filter: contrast(2);
-	-moz-filter: contrast(2);
-	-o-filter: contrast(2);
-	-ms-filter: contrast(2);
-	filter: contrast(2);
-}
-.button3:hover{
-	-webkit-filter: contrast(2);
-	-moz-filter: contrast(2);
-	-o-filter: contrast(2);
-	-ms-filter: contrast(2);
-	filter: contrast(2);
-}
-
 
 .button2{
 	float:left;
