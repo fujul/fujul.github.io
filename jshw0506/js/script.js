@@ -28,7 +28,7 @@ function clickBut1(){
 	but1.innerHTML='Cont..';
 	but1.style.display="none";
 	but2.style.display="block";
-	timeR=setInterval('time()', 35);
+	timeR=setInterval('time()', 34);
 }
 function clickBut2(){
 	stop_time();
