@@ -21,14 +21,14 @@ function time(){
 	if(ms>=999){
 		clearInterval(timeM); ms=0;
 		if(sec===59){sec=0; if (min===59){min=0; if (hour===99){hour=0; clickBut3();} else {{hour++;}} } else{min++;}} else{sec++;} 
-	} else {ms+=33;}	
+	} else {ms+=37;}	
 }
 	
 function clickBut1(){
 	but1.innerHTML='Cont..';
 	but1.style.display="none";
 	but2.style.display="block";
-	timeR=setInterval('time()', 31);
+	timeR=setInterval('time()', 35);
 }
 function clickBut2(){
 	stop_time();
