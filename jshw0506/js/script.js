@@ -18,10 +18,10 @@ function stop_time(){
 function time(){
 	p.innerHTML=ms;
 	h1.innerHTML = convert(hour)+':'+convert(min)+':'+convert(sec);
-	if(ms>=961){
+	if(ms>=999){
 		clearInterval(timeM); ms=0;
 		if(sec===59){sec=0; if (min===59){min=0; if (hour===99){hour=0; clickBut3();} else {{hour++;}} } else{min++;}} else{sec++;} 
-	} else {ms+=31;}	
+	} else {ms+=33;}	
 }
 	
 function clickBut1(){
