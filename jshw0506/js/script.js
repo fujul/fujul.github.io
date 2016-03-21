@@ -1,10 +1,11 @@
-var timeR=undefined;
-var timeM=undefined;
-var ms=0;
-var sec=0;
-var min=0;
-var hour=0;
-
+var timeR;
+var d; 
+var d1;
+var delta; 
+var ms;
+var sec;
+var min;
+var hour;
 function convert(par){
 	if ((par>0)&&(par<10)){return '0'+par}
 	if (par>=10){return par+''}
@@ -13,39 +14,41 @@ function convert(par){
 
 function stop_time(){
 	clearInterval(timeR);
+	but2.style.display="none";
+	but1.style.display="block";
 }
 
 function time(){
-	p.innerHTML=ms;
+	d1= new Date() - d;
+	delta=Math.trunc(d1/1000);
+	ms=d1 % 1000;
+	hour = Math.trunc(delta/3600);
+	min = Math.trunc((delta-hour * 3600)/60) ;
+	sec = delta- hour * 3600 - min * 60;
+	p.innerHTML = ms;
 	h1.innerHTML = convert(hour)+':'+convert(min)+':'+convert(sec);
-	if(ms>=999){
-		clearInterval(timeM); ms=0;
-		if(sec===59){sec=0; if (min===59){min=0; if (hour===99){hour=0; clickBut3();} else {{hour++;}} } else{min++;}} else{sec++;} 
-	} else {ms+=37;}	
-}
-	
+}	
+
 function clickBut1(){
 	but1.innerHTML='Cont..';
 	but1.style.display="none";
 	but2.style.display="block";
-	timeR=setInterval('time()', 34);
+	d = new Date();
+  if (ms===0) {d.setMilliseconds(d.getMilliseconds()- d1)}; 
+	timeR=setInterval('time()', 1);
 }
+
+
 function clickBut2(){
 	stop_time();
-	but2.style.display="none";
-	but1.style.display="block";
+	ms=0;
 	}
 function clickBut3(){
 	stop_time();
-	ms=0;
-	sec=0;
-	min=0;
-	hour=0;
+	ms=1;
 	p.innerHTML='0';
 	h1.innerHTML = '00:00:00';
 	but1.innerHTML='Start';
-	but2.style.display="none";
-	but1.style.display="block";
 }
 	
 var h1=document.querySelector("h1");
