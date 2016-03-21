@@ -1,6 +1,6 @@
 var timeR;
 var d; 
-var d1;
+var d1=null;
 var delta; 
 var ms;
 var sec;
@@ -34,18 +34,17 @@ function clickBut1(){
 	but1.style.display="none";
 	but2.style.display="block";
 	d = new Date();
-  if (ms===0) {d.setMilliseconds(d.getMilliseconds()- d1)}; 
+  	d.setMilliseconds(d.getMilliseconds()- (+d1));
 	timeR=setInterval('time()', 1);
 }
 
 
 function clickBut2(){
 	stop_time();
-	ms=0;
 	}
 function clickBut3(){
 	stop_time();
-	ms=1;
+	d1=null;
 	p.innerHTML='0';
 	h1.innerHTML = '00:00:00';
 	but1.innerHTML='Start';
