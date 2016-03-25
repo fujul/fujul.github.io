@@ -1,0 +1,42 @@
+.div_obsh{
+	margin:30px auto;
+	padding:10px;
+	width:50%;
+	height:350px;
+	border: 1px solid #aaaaaa;
+}
+.divTabs{
+	width:auto;
+	border: 1px solid #aaaaaa;
+	font-family:'Sans Serif', arial, tahoma;
+	font-size: 12px;
+	padding-top:5px;
+}
+
+label{
+    display: inline-block; width: 60px;
+  }
+	
+.div {
+		position:relative;
+    margin-bottom: 2em;
+		padding-left: 2px;
+  }
+.div div{
+position:absolute;
+color:red;
+background-color:#efefef;
+border-radius: 15px/15px;
+padding:5px;}
+	
+input[type="submit"]{
+	background-color:#efefef;
+	border: 1px solid #bdbdbd;
+	margin-top:2px;
+}
+
+input[type="submit"]:hover{
+	background-color:#e6e6e6;
+	border: 1px solid #aaaaaa;
+}
+
