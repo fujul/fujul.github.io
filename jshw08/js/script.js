@@ -53,27 +53,37 @@ $(function() {
     val: 	'Show help' 
 }).appendTo(myform);
 
-$('input[type="text"]').hover(
-  function(event) {
-	var el = $(this);
-	var title = el.attr('title');
-	el.attr('title', '').parent().append('<div>' + title + '</div>');
-	$div=el.parent().find("div");
-	$div.css(
-	{"margin-left": "+="+(el.width()+80)+"px",
-	  "margin-top": "-="+(el.height()+7)+"px",
-		"height": el.height()+""
-	})
-	$div.animate({
-    opacity: 0 
-  }, 3000, function(){});
-	},
-	function() {
-	var el = $(this);
-	var $div=el.parent().find("div");
-	el.attr('title',$div.text());
-	$div.remove();
+var $inputText = $('input[type="text"]');
+
+function hoverIn(el){
+	if (el.parent().find("div").length===0) {
+		var title = el.attr('title');
+		el.attr('title', '').parent().append('<div>' + title + '</div>');
+		var $div=el.parent().find("div");
+		$div.css(
+		{"margin-left": "+="+(el.width()+80)+"px",
+			"margin-top": "-="+(el.height()+7)+"px",
+			"height": el.height()+""
+		});
+		$div.animate({
+			opacity: 0 
+		}, 3000, function(){});
 	}
-	)
+};
+
+	function hoverFrom(el){
+		var $div=el.parent().find("div");
+	/*	if ($div) {*/
+		el.attr('title',$div.text());
+		$div.remove();
+		
+	};
+	
+	$inputText.hover(function(){hoverIn($(this))},function(){hoverFrom($(this))});
+	
+	$('input[type="submit"]').click(function(){
+		$inputText.each(function(i,elem) {hoverIn($(elem));});
+	});
 	
 });
+
