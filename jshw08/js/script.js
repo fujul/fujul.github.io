@@ -3,7 +3,8 @@ $(function() {
    class:  'div_obsh'
 	}).appendTo('body');
 	var myform = $("<form/>", {
-  	action: "" 
+  	action: "/",
+	method:"post"
 	}).appendTo(mydiv);
 	mydiv = $('<div/>',{
    class:  'divTabs'
