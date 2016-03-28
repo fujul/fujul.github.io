@@ -85,7 +85,6 @@ function hoverIn(el){
 	$('input[type="submit"]').click(function(event){
 		event.preventDefault();
 		$inputText.each(function(i,elem) {hoverFrom($(elem));hoverIn($(elem));});
-		/*event.preventDefault();*/
 	});
 
 	
