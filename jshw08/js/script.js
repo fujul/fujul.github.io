@@ -1,15 +1,15 @@
 $(function() {
 	var mydiv = $('<div/>',{
-   class:  'div_obsh',
+   class:  'div_obsh'
 	}).appendTo('body');
 	var myform = $("<form/>", {
-  	action: "/", 
+  	action: "" 
 	}).appendTo(mydiv);
 	mydiv = $('<div/>',{
-   class:  'divTabs',
+   class:  'divTabs'
 	}).appendTo(myform);
 	var div = $('<div/>',{
-   class:  'div',
+   class:  'div'
 	}).appendTo(mydiv);
 	$('<label/>', {
     for:     'firstname',
