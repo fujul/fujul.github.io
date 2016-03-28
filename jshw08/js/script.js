@@ -1,16 +1,16 @@
 $(function() {
 	var mydiv = $('<div/>',{
-   class:  'div_obsh'
+   class:  'div_obsh',
 	}).appendTo('body');
 	var myform = $("<form/>", {
-  	action: "/",
-	method:"post"
+  	action: "/", 
+		method:"post"
 	}).appendTo(mydiv);
 	mydiv = $('<div/>',{
-   class:  'divTabs'
+   class:  'divTabs',
 	}).appendTo(myform);
 	var div = $('<div/>',{
-   class:  'div'
+   class:  'div',
 	}).appendTo(mydiv);
 	$('<label/>', {
     for:     'firstname',
@@ -74,18 +74,18 @@ function hoverIn(el){
 
 	function hoverFrom(el){
 		var $div=el.parent().find("div");
-	/*	if ($div) {*/
+		if ($div.length>0) {
 		el.attr('title',$div.text());
-		$div.remove();
+		$div.remove();}
 		
 	};
 	
 	$inputText.hover(function(){hoverIn($(this))},function(){hoverFrom($(this))});
 	
-	$('input[type="submit"]').click(function(){
+	$('input[type="submit"]').click(function(event){
+		$inputText.each(function(i,elem) {hoverFrom($(elem));hoverIn($(elem));});
 		/*event.preventDefault();*/
-		$inputText.each(function(i,elem) {hoverIn($(elem));});
 	});
+
 	
 });
-
