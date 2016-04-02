@@ -1,0 +1,20 @@
+.fon{
+		background:#f0f0f0;
+	}
+	.info{
+		width:500px;
+		height:850px;
+		background:#ffffff;
+		margin-left:30%;
+	}    
+	.fio{
+		text-align:  center;
+	}    
+	.about_myself{
+		padding:0% 5% 0% 5%;
+		font-size: 15pt;
+	} 
+h2{
+	font-size:20px;
+	margin-bottom:5px;
+}
