@@ -1,0 +1,20 @@
+{
+  "name": "jshw1718",
+  "version": "1.0.0",
+  "description": "js home work 1718 \"google_&&_prototype\" preview http://fujul.github.io/jshw1718/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1"
+  }
+}

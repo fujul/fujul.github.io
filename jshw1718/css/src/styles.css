@@ -1,0 +1,97 @@
+body{font-family:'Sans Serif', arial, tahoma;font-size:12px; line-height:20px;}
+.divObsh{
+	width:100%;
+	background-color:#f1f1f1;
+	/*margin:30px auto;*/
+	padding:10px;
+	height:auto;
+	border-bottom: 1px solid #e5e5e5;
+	overflow:hidden;
+}
+a{
+	color:#1a0dab;
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+cite{
+color:#3a814d;	
+font-size:14px;
+}
+h2{
+	color:#808080;	
+	font-size:14px;
+	margin:20px 0;
+}
+li{
+	display:block;
+	margin-bottom:20px;
+}
+.linklogo{
+	display:block;
+	float:left;
+	margin-right:20px;
+}
+.divSearch{
+	float:left;
+	width:50%;
+}
+
+.str,.info,.allSearch{
+	margin-left:10%;
+	margin-right:40%;
+	width:50%;
+	overflow:hidden;
+}
+
+.str{
+	text-align:center;
+	display:none;
+}
+input[type="text"]{
+	width:96%;
+	height:35px;
+	padding-left:2%;
+	padding-right:2%;
+	border: 1px solid #e5e5e5;
+}
+input[type="submit"]{
+	height:40px;
+}
+
+.link__str{
+	color:blue;
+	font-size:16px;
+	margin:0 5px;
+}
+.prev{
+	display:none;
+	widows:90px;
+}
+.logo,.logo1{
+	display:block;
+}
+.logo1{
+	display:block;
+	float:left;
+}
+.next,.prev{
+	display:inline-block;
+}	
+
+.next1,.prev1{
+	display:block;
+	float:left;
+	line-height:50px;
+	font-size:20px;
+	text-decoration:none;
+}	
+
+.for_img{
+	width:55%;
+	margin:0 auto;
+	overflow:hidden;
+}
+
