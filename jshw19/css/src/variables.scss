@@ -1,0 +1,142 @@
+$image_dir: '../../img/';
+$fonts_dir: '../../fonts/';
+
+/*fonts*/
+$font_family_arial: Arial, sans-serif;
+$font_family_ubuntumedium: ubuntumedium, Arial, sans-serif;
+$font_family_ubuntulight: ubuntulight, Arial, sans-serif;
+$font-family_ubuntu_condensedregular: ubuntu_condensedregular, Arial, sans-serif; 
+
+/*color*/
+$background_color_white: white;
+$background_color_black: black;
+$background_color_blue: blue;
+$background_color_grey:#f7f7f7;
+$form__block_a_background_color: #35383c;
+$div_logo_max_h2_color: #f4b60d;
+$main_block1_elements_h1_color: #e9e9ea;
+$background_color_main_block_forwidth: #2a2d32;
+$menu__item_hover_color: #f4b60d;
+$menu__item_home_hover_color: #248cec;
+$search_background-color:#35383c;
+$search_color:#535659;
+
+/*px*/
+$body_font_size: 13px;
+$div_logo_h1_font_size: 30px;
+$div_logo_p_font_size: 13px;
+$max_width: 1160px;
+$top_str1_img_margin_top: 5px;
+$div_logo_margin_left: 5px;
+$nav_margin-top: 20px;
+$top_str1_margin_top: 40px;
+$top_str1_margin_bottom: 40px;
+$nav_height: 20px;
+$nav_width: 15px;
+$nav_margin_left_right: 7px;
+/*menu*/
+$menu_background: #2a2d32;
+$menu_height: 60px;
+$menu_margin-bottom: 40px;
+$menu__link_font-size: 13px;
+$menu__link_line_height:30px;
+$menu__link_padding_top_bottom: 15px;
+$menu__link_padding_left_right: 40px;
+$li_form_height: 60px;
+$li_form_margin_top_bottom: 10px;
+$search_padding_left:10px;
+$search_width: 200px;
+$search_height: 40px;
+$form__block_a_padding_left_right: 10px;
+$form__block_a_padding_top_bottom: 12px;
+$form__block_a_height: 18px;
+$form__block_a_margin-right: 5px;
+
+/*nav*/
+$p1_x: 0;
+$p2_x: -16px;
+$p3_x: -40px;
+$p4_x: -61px;
+$p5_x: -82px;
+$p_y: -22px;
+
+
+$div_logo_max_left:10%;
+$div_logo_max_top:450px;
+$div_logo_max_width:300px;	
+$div_logo_max_h_font_size:54px;
+$div_logo_max_h2_width:200px;
+
+
+/*carousel*/
+$nav_carousel_left: 50%;
+$nav_carousel_top: 620px;
+$nav_carousel_width: 90px;
+$nav_carousel_height: 20px;
+$nav_carousel_a_width:20px; 
+$nav_carousel_a_height:20px; 
+
+$p_x: -32px;
+/*main*/
+/*$main_block1*/
+$main_block1_elements_h1_font-size: 90px;
+$main_block1_elements_h2_font_size: 20px;
+$main_block1_a_font_size: 15px; 
+$main_block1_elements_width: 33%;
+$main_block1_margin_top_bottom: 60px;
+$main_block1_h1_width: 30%;
+$main_block1_div_width: 65%;
+$main_block1_h2_margin_top_bottom: 30px;
+$main_block1_a_margin_top: 30px;
+
+$main_block32_h4_max_width:40px;
+$main_block2_h1_font_size: 25px; 				
+$main_block2_h4_font_size: 15px; 				
+$main_block2_h4_margin_top_bottom:20px;
+$main_block2_h1_padding_top_bottom: 20px; 
+$main_block2_img_padding: 2%; 
+$main_block2_img_width: 21%;
+$main_link_img_max_width:260px;	
+$main_img_hover_width:200px;
+$main_img_hover_height:200px;
+$main_block2_p_margin_top:25%;
+$main_block2_p_font_size:80px;
+$main_block3_p_color:#9d9d9d;
+$main_block3_p_line_height:15px;
+$main_block3_p_margin_bottom:20px;
+$main_block3_h2_font_size: 20px; 				
+$main_block3_h2_margin_top_bottom:20px;
+$main_block3_h2_margin_left_right:10px;
+$main_block3_h3_font_size: 15px;
+$main_block3_h3_line_height:20px; 				
+$main_block31sub_margin_top_bottom:20px;
+$main_block31sub_cub_width:40px;
+$main_block31sub_cub_height:40px;
+$main_block31sub_cub_m_left:-15px;
+$main_block31sub_cub_m_top:15px;
+$main_block31sub_cub_d_top:55px;
+$main_block31sub_img_width:30%;
+$main_block31sub_div_width:62%;
+$main_block31sub_div_padding_left_right:4%;				
+$main_block32_div_margin_bottom:10px;
+$main_block32_h4_h5_height:40px;
+$main_block32_h4_h5_color:#e8e8e8;
+$main_block32_h4_padding_left_right:10px;
+$main_block32_p_margin_left:10px;
+$main_block32_p_margin_top_bottom:20px;
+$main_block4_div_width:16%;
+$main_block4_div_height:50px;
+$main_block5sub_width:23%;
+$main_block5sub_margin_top_bottom:40px;
+$main_block5sub_margin_right:2%;
+$main_block5sub_h2_font_size: 15px;
+$main_block5sub_h2_margin_top_bottom:40px;
+$main_block5sub_a_hr_color:#66686c;
+$main_block5sub_a_line_height:20px;
+
+$footer_padding_top_bottom:20px;
+$footer_background_color:#35383c;
+$footer_margin_top:-60px;
+$footer_p_line_height:20px;
+$footer_p_color:#5d6063;
+$footer_margin_right:20px;

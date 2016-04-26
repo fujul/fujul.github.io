@@ -1,0 +1,602 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*fonts*/
+/*color*/
+/*px*/
+/*menu*/
+/*nav*/
+/*carousel*/
+/*main*/
+/*$main_block1*/
+@font-face {
+  font-family: 'ubuntumedium';
+  src: url("../../fonts/ubuntu-m-webfont.eot");
+  src: url("../../fonts/ubuntu-m-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/ubuntu-m-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-m-webfont.woff") format("woff"), url("../../fonts/ubuntu-m-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntu_condensedregular';
+  src: url("../../fonts/ubuntu-c-webfont.eot");
+  src: url("../../fonts/ubuntu-c-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/ubuntu-c-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-c-webfont.woff") format("woff"), url("../../fonts/ubuntu-c-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntulight';
+  src: url("../../fonts/ubuntu-l-webfont.eot");
+  src: url("../../fonts/ubuntu-l-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/ubuntu-l-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-l-webfont.woff") format("woff"), url("../../fonts/ubuntu-l-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/*@font-face {
+    font-family: 'ubuntubold';
+    src: url($fonts_dir+'ubuntu-b-webfont.eot');
+    src: url($fonts_dir+'ubuntu-b-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntu-b-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntu-b-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntu-b-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntubold_italic';
+    src: url($fonts_dir+'ubuntu-bi-webfont.eot');
+    src: url($fonts_dir+'ubuntu-bi-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntu-bi-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntu-bi-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntu-bi-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ubuntulight_italic';
+    src: url($fonts_dir+'ubuntu-li-webfont.eot');
+    src: url($fonts_dir+'ubuntu-li-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntu-li-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntu-li-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntu-li-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntumedium_italic';
+    src: url($fonts_dir+'ubuntu-mi-webfont.eot');
+    src: url($fonts_dir+'ubuntu-mi-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntu-mi-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntu-mi-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntu-mi-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntu_monobold';
+    src: url($fonts_dir+'ubuntumono-b-webfont.eot');
+    src: url($fonts_dir+'ubuntumono-b-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntumono-b-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntumono-b-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntumono-b-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntu_monobold_italic';
+    src: url($fonts_dir+'ubuntumono-bi-webfont.eot');
+    src: url($fonts_dir+'ubuntumono-bi-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntumono-bi-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntumono-bi-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntumono-bi-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntu_monoregular';
+    src: url($fonts_dir+'ubuntumono-r-webfont.eot');
+    src: url($fonts_dir+'ubuntumono-r-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntumono-r-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntumono-r-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntumono-r-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntu_monoitalic';
+    src: url($fonts_dir+'ubuntumono-ri-webfont.eot');
+    src: url($fonts_dir+'ubuntumono-ri-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntumono-ri-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntumono-ri-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntumono-ri-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url($fonts_dir+'ubuntu-r-webfont.eot');
+    src: url($fonts_dir+'ubuntu-r-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntu-r-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntu-r-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntu-r-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+/*HEADER*/
+a {
+  text-decoration: none;
+  color: black; }
+
+span, a:hover {
+  color: blue; }
+
+p, span {
+  color: black;
+  font-family: Arial, sans-serif; }
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 13px; }
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block; }
+
+/*HEADER*/
+.header_str1 {
+  position: relative;
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  /*Menu*/ }
+  .header_str1 .top_str1 {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+    .header_str1 .top_str1 nav {
+      display: block;
+      width: auto;
+      float: right;
+      margin-top: 20px; }
+      .header_str1 .top_str1 nav .navig {
+        display: block;
+        text-decoration: none;
+        float: left;
+        height: 20px;
+        width: 15px;
+        margin: auto 7px; }
+      .header_str1 .top_str1 nav .p1 {
+        background: url("../../img/small_picts.png") 0 0 no-repeat; }
+      .header_str1 .top_str1 nav .p2 {
+        background: url("../../img/small_picts.png") -16px 0 no-repeat; }
+      .header_str1 .top_str1 nav .p3 {
+        background: url("../../img/small_picts.png") -40px 0 no-repeat; }
+      .header_str1 .top_str1 nav .p4 {
+        background: url("../../img/small_picts.png") -61px 0 no-repeat; }
+      .header_str1 .top_str1 nav .p5 {
+        background: url("../../img/small_picts.png") -82px 0 no-repeat; }
+      .header_str1 .top_str1 nav .p1:hover {
+        background: url("../../img/small_picts.png") 0 -22px no-repeat; }
+      .header_str1 .top_str1 nav .p2:hover {
+        background: url("../../img/small_picts.png") -16px -22px no-repeat; }
+      .header_str1 .top_str1 nav .p3:hover {
+        background: url("../../img/small_picts.png") -40px -22px no-repeat; }
+      .header_str1 .top_str1 nav .p4:hover {
+        background: url("../../img/small_picts.png") -61px -22px no-repeat; }
+      .header_str1 .top_str1 nav .p5:hover {
+        background: url("../../img/small_picts.png") -82px -22px no-repeat; }
+    .header_str1 .top_str1 img {
+      display: block;
+      float: left;
+      margin-top: 5px; }
+    .header_str1 .top_str1 .div_logo {
+      float: left;
+      margin-left: 5px;
+      width: auto; }
+      .header_str1 .top_str1 .div_logo h1 {
+        display: block;
+        font-family: ubuntumedium, Arial, sans-serif;
+        font-size: 30px; }
+      .header_str1 .top_str1 .div_logo p {
+        display: block;
+        font-family: ubuntulight, Arial, sans-serif;
+        font-size: 13px;
+        letter-spacing: 3px; }
+  .header_str1 .menu {
+    list-style: none;
+    background: #2a2d32;
+    display: block;
+    height: 60px;
+    width: auto;
+    margin-bottom: 40px; }
+    .header_str1 .menu .menu__item {
+      float: left;
+      display: block; }
+      .header_str1 .menu .menu__item .menu__link {
+        font-family: ubuntu_condensedregular, Arial, sans-serif;
+        font-size: 13px;
+        display: block;
+        padding: 15px 40px;
+        color: white;
+        text-decoration: none;
+        line-height: 30px; }
+    .header_str1 .menu .menu__item:hover .menu__link {
+      color: #f4b60d; }
+    .header_str1 .menu .home {
+      background: #248cec; }
+    .header_str1 .menu .li_form {
+      float: right;
+      height: 60px; }
+      .header_str1 .menu .li_form .form__block {
+        width: auto;
+        margin: 10px 0; }
+        .header_str1 .menu .li_form .form__block #search {
+          padding-left: 10px;
+          display: block;
+          float: left;
+          background-color: #35383c;
+          border: 1px solid black;
+          border-right: none;
+          color: #535659;
+          width: 200px;
+          height: 40px; }
+        .header_str1 .menu .li_form .form__block a {
+          padding: 12px 10px;
+          display: block;
+          float: right;
+          height: 18px;
+          border: 1px solid black;
+          border-left: none;
+          background-color: #35383c;
+          margin-right: 5px; }
+  .header_str1 .carousel {
+    margin: 0 auto;
+    width: 1160px;
+    text-align: center;
+    z-index: 0; }
+    .header_str1 .carousel .carousel-hider {
+      width: 1160px;
+      overflow: hidden;
+      float: left;
+      z-index: 0; }
+      .header_str1 .carousel .carousel-hider .nav_carousel {
+        display: block;
+        z-index: 100;
+        position: absolute;
+        left: 50%;
+        top: 620px;
+        bottom: 0px;
+        right: 0px;
+        width: 90px;
+        height: 20px; }
+        .header_str1 .carousel .carousel-hider .nav_carousel a {
+          display: block;
+          float: left;
+          z-index: 100;
+          width: 20px;
+          height: 20px; }
+        .header_str1 .carousel .carousel-hider .nav_carousel .p11 {
+          z-index: 100;
+          background: url("../../img/slider_but.png") 0 0 no-repeat; }
+        .header_str1 .carousel .carousel-hider .nav_carousel .p12 {
+          z-index: 100;
+          background: url("../../img/slider_but.png") -32px 0 no-repeat; }
+        .header_str1 .carousel .carousel-hider .nav_carousel .p13 {
+          z-index: 100;
+          background: url("../../img/slider_but.png") -32px 0 no-repeat; }
+      .header_str1 .carousel .carousel-hider .div_logo_max {
+        text-decoration: none;
+        display: block;
+        z-index: 90;
+        position: absolute;
+        left: 10%;
+        top: 450px;
+        bottom: 0px;
+        right: 0px;
+        width: 300px;
+        text-align: center; }
+        .header_str1 .carousel .carousel-hider .div_logo_max h2, .header_str1 .carousel .carousel-hider .div_logo_max h3 {
+          background: black;
+          color: white;
+          font-family: ubuntumedium, Arial, sans-serif;
+          font-size: 54px;
+          width: auto; }
+        .header_str1 .carousel .carousel-hider .div_logo_max h2 {
+          width: 200px; }
+          .header_str1 .carousel .carousel-hider .div_logo_max h2 span {
+            color: #f4b60d; }
+      .header_str1 .carousel .carousel-hider .carousel-list {
+        list-style: none;
+        width: 3480px;
+        /*$carousel_list_width;*/
+        padding: 0px;
+        position: relative;
+        z-index: 0; }
+        .header_str1 .carousel .carousel-hider .carousel-list .carousel-element {
+          display: block;
+          float: left;
+          z-index: 0; }
+          .header_str1 .carousel .carousel-hider .carousel-list .carousel-element img {
+            max-width: 1158px;
+            /*$carousel_element_img_max-width;*/
+            width: 100%;
+            z-index: 0; }
+
+/*header*/
+.main {
+  width: 100%;
+  font-family: ubuntumedium, Arial, sans-serif; }
+  .main .main_block {
+    max-width: 1160px;
+    margin: 60px auto; }
+  .main .block1 .main_block1_elements {
+    float: left;
+    width: 33%; }
+    .main .block1 .main_block1_elements h1 {
+      display: block;
+      float: left;
+      font-size: 90px;
+      color: #e9e9ea;
+      width: 30%; }
+    .main .block1 .main_block1_elements div {
+      float: left;
+      width: 65%; }
+      .main .block1 .main_block1_elements div img {
+        display: block; }
+      .main .block1 .main_block1_elements div h2 {
+        margin: 30px 0;
+        display: block;
+        font-size: 20px; }
+      .main .block1 .main_block1_elements div p {
+        display: block;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        white-space: normal; }
+      .main .block1 .main_block1_elements div a {
+        margin-top: 30px;
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-size: 15px; }
+        .main .block1 .main_block1_elements div a span {
+          color: blue; }
+      .main .block1 .main_block1_elements div a:hover {
+        color: blue; }
+      .main .block1 .main_block1_elements div a:hover span {
+        color: black; }
+  .main .forwidth2, .main .forwidth3 {
+    background-color: #2a2d32;
+    color: white;
+    width: 100%;
+    z-index: 10; }
+    .main .forwidth2 .block2, .main .forwidth3 .block2 {
+      margin: 0 auto; }
+      .main .forwidth2 .block2 h1, .main .forwidth3 .block2 h1 {
+        display: block;
+        width: 100%;
+        font-size: 25px;
+        padding: 20px 0; }
+      .main .forwidth2 .block2 .block2_img, .main .forwidth3 .block2 .block2_img {
+        position: relative;
+        padding: 2%;
+        width: 21%;
+        margin: auto;
+        float: left;
+        text-align: center; }
+        .main .forwidth2 .block2 .block2_img .link_img, .main .forwidth3 .block2 .block2_img .link_img {
+          display: block;
+          text-decoration: none;
+          margin: auto;
+          text-align: center; }
+          .main .forwidth2 .block2 .block2_img .link_img img, .main .forwidth3 .block2 .block2_img .link_img img {
+            max-width: 260px;
+            width: 100%; }
+        .main .forwidth2 .block2 .block2_img h4, .main .forwidth3 .block2 .block2_img h4 {
+          display: block;
+          font-size: 15px;
+          margin: 20px 0;
+          color: white; }
+        .main .forwidth2 .block2 .block2_img a:hover h4, .main .forwidth3 .block2 .block2_img a:hover h4 {
+          color: #f4b60d; }
+      .main .forwidth2 .block2 .img_hover, .main .forwidth3 .block2 .img_hover {
+        position: absolute;
+        display: table;
+        text-align: center;
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        background: #248cec;
+        background: rgba(36, 140, 236, 0.7); }
+        .main .forwidth2 .block2 .img_hover div, .main .forwidth3 .block2 .img_hover div {
+          display: table; }
+        .main .forwidth2 .block2 .img_hover p, .main .forwidth3 .block2 .img_hover p {
+          display: table-cell;
+          text-align: center;
+          vertical-align: middle;
+          margin-top: 25%;
+          font-size: 80px;
+          font-family: ubuntulight, Arial, sans-serif;
+          color: white; }
+  .main .forwidth3 {
+    background-color: #f7f7f7; }
+    .main .forwidth3 .block3 {
+      margin: 0 auto; }
+      .main .forwidth3 .block3 p {
+        color: #9d9d9d;
+        line-height: 15px;
+        margin-bottom: 20px; }
+        .main .forwidth3 .block3 p span {
+          color: blue; }
+      .main .forwidth3 .block3 h2 {
+        font-size: 20px;
+        color: black;
+        margin: 20px 10px; }
+      .main .forwidth3 .block3 h3 {
+        font-size: 15px;
+        line-height: 20px; }
+      .main .forwidth3 .block3 .block3sub {
+        float: left;
+        width: 50%; }
+      .main .forwidth3 .block3 .block31sub {
+        width: 100%;
+        position: relative;
+        margin: 20px 0; }
+        .main .forwidth3 .block3 .block31sub .cub {
+          display: table;
+          overflow: hidden;
+          padding: 0;
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          z-index: 5;
+          left: 0;
+          top: 0; }
+          .main .forwidth3 .block3 .block31sub .cub h6 {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle; }
+        .main .forwidth3 .block3 .block31sub .cub_m {
+          background-color: blue;
+          left: -15px;
+          top: 15px; }
+        .main .forwidth3 .block3 .block31sub .cub_d {
+          background-color: #f4b60d;
+          left: -15px;
+          top: 55px; }
+        .main .forwidth3 .block3 .block31sub img {
+          display: block;
+          float: left;
+          width: 30%; }
+        .main .forwidth3 .block3 .block31sub div {
+          float: left;
+          width: 62%;
+          padding: 0 4%; }
+      .main .forwidth3 .block3 .block32 div {
+        margin-bottom: 10px; }
+      .main .forwidth3 .block3 .block32 .link_32 {
+        display: table;
+        width: 100%; }
+      .main .forwidth3 .block3 .block32 h4, .main .forwidth3 .block3 .block32 h5 {
+        display: table-cell;
+        vertical-align: middle;
+        height: 40px;
+        border: 1px solid #e8e8e8; }
+      .main .forwidth3 .block3 .block32 h4 {
+        width: 40px;
+        padding: 0 10px;
+        text-align: center; }
+      .main .forwidth3 .block3 .block32 h5 {
+        max-width: 100%;
+        width: 1120px;
+        padding-left: 10px; }
+      .main .forwidth3 .block3 .block32 p {
+        display: none;
+        margin: 20px 0 20px 10px; }
+  .main .block4 div {
+    float: left;
+    width: 16%;
+    height: 50px; }
+    .main .block4 div .link_img4 {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      width: auto;
+      height: 50px; }
+      .main .block4 div .link_img4 img {
+        max-width: 100%;
+        width: 100%;
+        height: auto; }
+  .main .block5 .block5sub {
+    float: left;
+    width: 23%;
+    margin: 40px 2% 40px 0; }
+    .main .block5 .block5sub h2 {
+      font-size: 15px;
+      margin: 40px 0; }
+    .main .block5 .block5sub a, .main .block5 .block5sub hr {
+      width: 100%;
+      color: #66686c;
+      line-height: 20px; }
+    .main .block5 .block5sub a:hover {
+      color: blue; }
+
+/*end main*/
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #35383c;
+  margin-top: -60px; }
+  .footer .footer_block {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto; }
+  .footer .footer_copy {
+    float: right; }
+  .footer .footer_contact {
+    float: left; }
+    .footer .footer_contact p, .footer .footer_contact img {
+      display: block;
+      float: left; }
+  .footer p {
+    line-height: 20px;
+    color: #5d6063;
+    margin-right: 20px; }
+
+/*# sourceMappingURL=main.css.map */

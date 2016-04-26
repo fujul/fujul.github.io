@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'ubuntumedium';
+    src: url($fonts_dir+'ubuntu-m-webfont.eot');
+    src: url($fonts_dir+'ubuntu-m-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntu-m-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntu-m-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntu-m-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntu_condensedregular';
+    src: url($fonts_dir+'ubuntu-c-webfont.eot');
+    src: url($fonts_dir+'ubuntu-c-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntu-c-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntu-c-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntu-c-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntulight';
+    src: url($fonts_dir+'ubuntu-l-webfont.eot');
+    src: url($fonts_dir+'ubuntu-l-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntu-l-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntu-l-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntu-l-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*@font-face {
+    font-family: 'ubuntubold';
+    src: url($fonts_dir+'ubuntu-b-webfont.eot');
+    src: url($fonts_dir+'ubuntu-b-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntu-b-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntu-b-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntu-b-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntubold_italic';
+    src: url($fonts_dir+'ubuntu-bi-webfont.eot');
+    src: url($fonts_dir+'ubuntu-bi-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntu-bi-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntu-bi-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntu-bi-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ubuntulight_italic';
+    src: url($fonts_dir+'ubuntu-li-webfont.eot');
+    src: url($fonts_dir+'ubuntu-li-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntu-li-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntu-li-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntu-li-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntumedium_italic';
+    src: url($fonts_dir+'ubuntu-mi-webfont.eot');
+    src: url($fonts_dir+'ubuntu-mi-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntu-mi-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntu-mi-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntu-mi-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntu_monobold';
+    src: url($fonts_dir+'ubuntumono-b-webfont.eot');
+    src: url($fonts_dir+'ubuntumono-b-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntumono-b-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntumono-b-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntumono-b-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntu_monobold_italic';
+    src: url($fonts_dir+'ubuntumono-bi-webfont.eot');
+    src: url($fonts_dir+'ubuntumono-bi-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntumono-bi-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntumono-bi-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntumono-bi-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntu_monoregular';
+    src: url($fonts_dir+'ubuntumono-r-webfont.eot');
+    src: url($fonts_dir+'ubuntumono-r-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntumono-r-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntumono-r-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntumono-r-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntu_monoitalic';
+    src: url($fonts_dir+'ubuntumono-ri-webfont.eot');
+    src: url($fonts_dir+'ubuntumono-ri-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntumono-ri-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntumono-ri-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntumono-ri-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url($fonts_dir+'ubuntu-r-webfont.eot');
+    src: url($fonts_dir+'ubuntu-r-webfont.eot?#iefix') format('embedded-opentype'),
+         url($fonts_dir+'ubuntu-r-webfont.woff2') format('woff2'),
+         url($fonts_dir+'ubuntu-r-webfont.woff') format('woff'),
+         url($fonts_dir+'ubuntu-r-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
