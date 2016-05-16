@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <title>JSHomeWork2324</title>
+		<link rel="stylesheet"  href="css/reset.css">
+		<link rel="stylesheet"  href="css/styles.css">
+		<script data-main="js/app.js" src="js/require.js"></script>
+	</head>	
+  <body>
+	<script type="text/template" id="wrapper-template">
+	<div class="div_list">
+	<h3>Редактируемый список</h3>
+	<div class="wrapper">
+		<ul class="item-list"></ul>
+		<div class="controlls">
+			<input type="text" class="item-value">
+			<button class="item-add">Вставить</button>
+			<button class="item-update">Изменить</button>
+		</div>
+	</div>
+	</div>
+	</script>
+	<script type="text/template" id="list-template">
+	<% for (var i=0; i < data.length; i++) {%>
+	<li><p data-value="<%= data[i] %>" class="item-delete" title="delete <%= data[i] %>">&nbsp;X&nbsp;</p><p class="itemup"><%= data[i] %></p></li>
+	<% }; %>
+	</script>
+  </body>
+</html>
