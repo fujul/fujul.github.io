@@ -1,1 +1,1 @@
-js home work 21 "тесты" preview http://fujul.github.io/jshw21/
+js home work 21 "jasmine" preview http://fujul.github.io/jshw21/
