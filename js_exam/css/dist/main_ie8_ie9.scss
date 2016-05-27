@@ -1,4 +1,221 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+};
+$image_dir: '../../img/';
+$fonts_dir: '../../fonts/';
+
+/*fonts*/
+$font_family_Open_sans: 'Open sans',Tahoma;
+
+
+$font_family_MontserratBold: 'MontserratBold','Open sans',Tahoma; 
+$font_family_MontserratRegular: 'MontserratRegular','Open sans',Tahoma; 
+$font_family_MontserratRobotoLight: 'RobotoLight','Open sans',Tahoma; 
+
+
+$h2_h1_color:white;
+$h2_h1_margin-bottom:20px;
+$h2_h1_line-height:40px;
+$h4_color:white;
+$h4_font-size:10px;
+/*$h3_line-height:40px;*/
+$h5_color:white;
+$h5_margin-bottom:20px;
+$h2_font-size:20px;
+$h1_font-size:30px;
+
+$h3_font-size:22px;
+$h3_color:black;
+$h3_padding-top:20px;
+$h3_line-height:30px;
+$p_font-size:14px;
+$h5_font-size:18px;
+$h6_font-size:14px;
+$h6_color:#aeacaa;
+$h6_line-height:15px;
+$menu_width:200px;
+$menu__item_margin-left:2%;
+$menu__item_padding_top_bottom:2px;
+$menu__item_padding_left_right:20px;
+$menu__link_font-size:14px;
+$menu__link_color:white;
+$menu__link_line-height:30px;
+$menu__item_hover_border-radius:100px;
+$menu__item_hover_border:2px;
+$menu__item_hover_color:#ffffff;
+$menu__item_hover_padding_top_bottom:0;
+$menu__item_hover_padding_left_right:18px;
+
+$header_img_min-width:320px;
+$header_img_width:100%;
+$header__img_width:100%;
+$header__img_top:20px;
+$header__img_left:0;
+$header_menu_top:20px;	
+$header_title_top:30%;
+$button_link_background:#ff4e50;
+$button_link_border-radius: 100px;
+$button_link_line-height:40px;
+$header_link_width:260px;
+$main_img_width:90%;
+$main_img_min-width:300px;
+$main_img_margin-bottom:10px;
+$main_for_img_top:25%;
+$main_for_img_left:0;
+$main_for_img_width:85%;
+$main_for_img_padding-left:10%;
+$main_for_img_padding-bottom:3px;
+$main_for_img_height:70%;
+$step_link_width:50px;
+$step_link_padding-left:10px;
+$step_link_line-height:20px;
+$main_for_img_h2_font-size:24px;
+$main_for_img_h2_line-height:30px;
+$main_for_img_h2_margin-top:15px;
+$main_for_img_h2_margin-bottom:15px;
+$icons_width:40px;
+$icons_left:80%;
+$icons_top:50%;
+$main_1_margin-top:20px;
+$main2_img_width:120px;
+$main_for_icons_width:140px;
+$main_for_icons_margin-top:20px;
+$main_p_margin:20px;
+$main_p_color:black;
+$main_2_for_img_width:70%;
+$main_2_button_link_background:white;
+$main_2_button_link_color:#ff6667;
+$main_2_button_link_border: 2px;   
+$main_2_button_link_border_color:#ff6667;   
+$main_2_button_link_font-size:14px;
+$main_2_button_link_margin_top_bottom:20px;
+$main_2_button_link_width:260px;
+$item-value_width:260px;
+$item-value_height:30px;
+$item-value_margin-bottom:20px;
+$item-value_padding-left:5px;
+$main_4_h6_font-size:18px;
+$main_4_h6_margin-bottom:20px;
+$hr_margin_top:40px;
+$hr_margin_bottom:10px;
+$hr_width:100%;
+$hr_color: #ff6667;
+$hr_background-color: #ff6667; 
+$hr_height: 3px; 
+$footer_h2_color:#ff6667;
+$footer_h2_font-size:16px;
+$footer_h2_margin-bottom:7px;
+$footer_p_color:#e7e7e7;
+$footer_p_font-size:10px;
+$footer_p_margin_top_bottom:10px;
+$footer_h5_color:black;
+$footer_h5_margin:0;
+$footer_h5_font-weight:900;
+$footer_h5_font-size:14px;
+$footer_link_color:#b8b8b8;
+$menu_footer_width:250px;
+$menu_footer_margin_bottom:10px;
+$footer_item_margin-left:5%;
+
+$jcarousel-wrapper_width: 250px;
+$jcarousel-wrapper_height: 400px;
+$jcarousel-control_top: 40px;
+$jcarousel-control_width: 50px;
+$jcarousel-control_height: 60px;
+$jcarousel-control-prev_left: 20px;
+$jcarousel-control-next_right: 20px;
+
+$min768_header_title_h1_font-size:52px;
+$min768_header_title_h1_margin-top:20px;
+$min768_header_title_h1_line-height:60px;
+$min768_header_title_h5_font-size:24px;
+$min768_header_title_h5_margin-top:20px;
+$min768_header_title_h5_margin-bottom:40px;
+$min768_main_1_width:810px;
+$min768_main_11_width:250px;
+$min768_main_11_height:400px;
+$min768_main_11_margin-left:10px;
+$min768_main_11_margin-right:10px;
+$min768_main_for_img_top:50%;
+$min768_main_for_img_width:75%;
+$min768_main_for_img_margin_left_right:10%;
+$min768_menu_margin-top:30px;
+$min768_menu_margin-right:10%;
+
+$min768_header_menu_h2_margin-left:10%;
+$min768_header_menu_h2_margin-top:30px;
+$min768_main_h3_margin-top:70px;
+$min768_main_h3_margin-bottom:30px;
+$min768_main_21_margin-left:1%;
+$min768_main_21_margin-right:1%;
+$min768_main_2_width:80%;
+$min768_main_2_button_link_margin-top:20px;
+$min768_main_2_button_link_margin-bottom:70px;
+$min768_main_4_h6_margin-bottom:40px;
+$min768_main_4_hr_margin-top:85px;
+$min768_main_4_hr_margin-bottom:40px;
+$min768_poisk_link1_width:150px;
+$min768_poisk_link1_margin-left:10px;
+$min768_search_width:450px;
+$min768_footer_item_padding-left:30%;	
+$min768_footer_width:90%;
+$min768_footer_menu_width:75%;
+$min768_footer_el_width:30%;
+$min768_footer_el_margin-left:1%;
+$min768_footer_el_margin-right:1%;
+$min768_footer_logo_width:20%;
+$min768_footer_logo_margin-left:1%;
+$min768_footer_logo_margin-right:1%;
+$min768_footer_el_h2_margin-top:-10px;
+	
+$min768_max960_main_21_width:48%;
+$min961_main_21_width:23%;
+;
 @font-face {
     font-family: 'MontserratBold';
     src: url($fonts_dir+'montserrat-bold-webfont.woff2') format('woff2'),
