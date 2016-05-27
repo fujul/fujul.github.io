@@ -45,7 +45,8 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-};
+}
+
 $image_dir: '../../img/';
 $fonts_dir: '../../fonts/';
 
@@ -215,7 +216,8 @@ $min768_footer_el_h2_margin-top:-10px;
 	
 $min768_max960_main_21_width:48%;
 $min961_main_21_width:23%;
-;
+
+
 @font-face {
     font-family: 'MontserratBold';
     src: url($fonts_dir+'montserrat-bold-webfont.woff2') format('woff2'),

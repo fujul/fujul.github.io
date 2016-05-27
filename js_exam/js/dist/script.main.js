@@ -26,7 +26,8 @@
 
     });
 })(jQuery);
-;(function($) {
+
+(function($) {
 $(function() {
 	
 	function Search(poisk){
