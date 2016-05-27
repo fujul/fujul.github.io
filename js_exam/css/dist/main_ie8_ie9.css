@@ -418,7 +418,8 @@ hr {
 .main_21 {
   float: left;
   margin-left: 1%;
-  margin-right: 1%; }
+  margin-right: 1%;
+  width: 23%; }
 
 .main_2 {
   width: 80%;

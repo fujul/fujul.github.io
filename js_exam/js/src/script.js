@@ -55,22 +55,29 @@ $(function() {
 				//alert('search_not8');
 			try{	
 			$(document).ready(function() {
+
 				//1. Создаём новый объект XMLHttpRequest
-				var xhr = new XMLHttpRequest();
+				var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
+
+				var xhr = new XHR();
+
+//				var xhr = new XMLHttpRequest();
 				// 2. Конфигурируем его: GET-запрос на URL 'phones.json'
 				if (poisk==''){var text1='images'}else{var text1=poisk};
-				xhr.open('GET', 'http://api.pixplorer.co.uk/image?word='+text1+'&amount=7&size=M', false);
+				xhr.open('GET', 'http://api.pixplorer.co.uk/image?word='+text1+'&amount=7&size=M', true);
 
 				// 3. Отсылаем запрос
 				xhr.send();
 
 				// 4. Если код ответа сервера не 200, то это ошибка
-				if (xhr.status != 200) {
+			//	if (xhr.status != 200) {
 					// обработать ошибку
-					alert( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
-				} else {
+			//		alert( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
+			//	} else {
 					// вывести результат
+
 					var json = xhr.responseText;
+
 					$(document).ready(function() {							
 						json = $.parseJSON(json);					
 						
@@ -78,7 +85,7 @@ $(function() {
 							 dom(item.imageurl,i)									
 						});	
 					})
-				};
+				//};
 			});					
 		} catch(e){}			
 		}else{
@@ -101,7 +108,7 @@ $(function() {
 // указываем элемент-контейнер в котором расположены блоки для динамической верстки
 	  itemSelector: '.grid-item',
 // указываем класс элемента являющегося блоком в нашей сетке
-					columnWidth: 200,
+	 columnWidth: 200,
           singleMode: false,
 // true - если у вас все блоки одинаковой ширины
 	  isResizable: true,
@@ -118,8 +125,8 @@ $(function() {
 };
 	
 	Search('images');
-	var link_poisk=document.getElementById("poisk_link1");
-	
+	var link_poisk=document.querySelector('#poisk_link1');
+
 	function handler(event){
 		event = event || window.event;
 		event.preventDefault ? event.preventDefault() : (event.returnValue=false);
