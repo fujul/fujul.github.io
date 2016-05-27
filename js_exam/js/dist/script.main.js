@@ -89,7 +89,7 @@ $(function() {
 				//var xhr = new XMLHttpRequest();
 				// 2. Конфигурируем его: GET-запрос на URL 'phones.json'
 				if (poisk==''){var text1='images'}else{var text1=poisk};
-				xhr.open('GET', 'http://api.pixplorer.co.uk/image?word='+text1+'&amount=7&size=M', false);
+				xhr.open('GET', 'http://api.pixplorer.co.uk/image?word='+text1+'&amount=7&size=M', true);
 
 				// 3. Отсылаем запрос
 				xhr.send();
