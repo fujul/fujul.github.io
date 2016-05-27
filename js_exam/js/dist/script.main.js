@@ -83,8 +83,10 @@ $(function() {
 				//alert('search_not8');
 			try{	
 			$(document).ready(function() {
+				var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
+				var xhr = new XHR();
 				//1. Создаём новый объект XMLHttpRequest
-				var xhr = new XMLHttpRequest();
+				//var xhr = new XMLHttpRequest();
 				// 2. Конфигурируем его: GET-запрос на URL 'phones.json'
 				if (poisk==''){var text1='images'}else{var text1=poisk};
 				xhr.open('GET', 'http://api.pixplorer.co.uk/image?word='+text1+'&amount=7&size=M', false);
@@ -93,10 +95,10 @@ $(function() {
 				xhr.send();
 
 				// 4. Если код ответа сервера не 200, то это ошибка
-				if (xhr.status != 200) {
+				/*if (xhr.status != 200) {
 					// обработать ошибку
 					alert( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
-				} else {
+				} else {*/
 					// вывести результат
 					var json = xhr.responseText;
 					$(document).ready(function() {							
@@ -106,7 +108,7 @@ $(function() {
 							 dom(item.imageurl,i)									
 						});	
 					})
-				};
+				/*};*/
 			});					
 		} catch(e){}			
 		}else{
@@ -146,7 +148,7 @@ $(function() {
 };
 	
 	Search('images');
-	var link_poisk=document.getElementById("poisk_link1");
+	var link_poisk=document.querySelector('#poisk_link1');
 	
 	function handler(event){
 		event = event || window.event;
