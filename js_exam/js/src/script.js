@@ -86,24 +86,7 @@ $(function() {
 						json = $.parseJSON(json);					
 						
 						$(json.images).each(function(i, item) {
-							 dom(item.imageurl,i,1);
-								$('#container').masonry({
-								// указываем элемент-контейнер в котором расположены блоки для динамической верстки
-										itemSelector: '.grid-item',
-								// указываем класс элемента являющегося блоком в нашей сетке
-									 columnWidth: 200,
-													singleMode: false,
-								// true - если у вас все блоки одинаковой ширины
-										isResizable: true,
-								// перестраивает блоки при изменении размеров окна
-										isAnimated: true,
-								// анимируем перестроение блоков
-													animationOptions: { 
-												queue: false, 
-												duration: 500 
-										}
-								// опции анимации - очередь и продолжительность анимации
-									});
+							 dom(item.imageurl,i,1)		
 						});	
 					})
 				//};
@@ -115,39 +98,33 @@ $(function() {
 				$.getJSON('http://api.pixplorer.co.uk/image?word='+(poisk||'images')+'&amount=7',
 				function(data){
 					$.each(data.images, function(i, val){
-						dom(val.imageurl,i,2);	
-						
-						$('#container').masonry('reload');		
-						var container = document.querySelector('#container');
-						var msnry;
-						imagesLoaded( container, function() {
-						// Инициализация Масонри, после загрузки изображений
-							$('#container').masonry({
-						// указываем элемент-контейнер в котором расположены блоки для динамической верстки
-								itemSelector: '.grid-item',
-						// указываем класс элемента являющегося блоком в нашей сетке
-							 columnWidth: 200,
-											singleMode: false,
-						// true - если у вас все блоки одинаковой ширины
-								isResizable: true,
-						// перестраивает блоки при изменении размеров окна
-								isAnimated: true,
-						// анимируем перестроение блоков
-											animationOptions: { 
-										queue: false, 
-										duration: 500 
-								}
-						// опции анимации - очередь и продолжительность анимации
-							}); 
-							}); 
-						
+						dom(val.imageurl,i,2);					
 					});								
 				});
 			}  catch(e) {} finally{}	;
 		} /*end else*/
 
-	
-
+$('#container').masonry('reload');		
+	var container = document.querySelector('#container');
+	var msnry;
+// Инициализация Масонри, после загрузки изображений
+	$('#container').masonry({
+// указываем элемент-контейнер в котором расположены блоки для динамической верстки
+	  itemSelector: '.grid-item',
+// указываем класс элемента являющегося блоком в нашей сетке
+	 columnWidth: 200,
+          singleMode: false,
+// true - если у вас все блоки одинаковой ширины
+	  isResizable: true,
+// перестраивает блоки при изменении размеров окна
+	  isAnimated: true,
+// анимируем перестроение блоков
+          animationOptions: { 
+	      queue: false, 
+	      duration: 500 
+	  }
+// опции анимации - очередь и продолжительность анимации
+	}); 
 };
 	
 	Search('images');
