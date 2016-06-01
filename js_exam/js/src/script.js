@@ -6,7 +6,7 @@ $(function() {
 		var grid = document.querySelector(".grid");
 		
 		function dom(imageurl,i){
-			var tegParent=document.querySelector('#grid_plagin');
+			var tegParent=document.querySelector('#container');
 			var teg_grid_item = document.createElement('div');
 			teg_grid_item.className = 'grid-item';
 			teg_grid_item.setAttribute('id','grid-item'+i+'');
@@ -25,6 +25,10 @@ $(function() {
 			teg_img.className = 'img';
 			teg_img.setAttribute('src',imageurl);
 			tegParent.appendChild(teg_img);	
+			
+			$(teg_img).width($(teg_img).width()*3);
+			
+			
 			$(tegParent1).width($(teg_img).width());
 			$(tegParent1).height($(teg_img).height());
 			tegParent=document.querySelector('#grid-item'+i+' .g_i_1');
@@ -99,12 +103,13 @@ $(function() {
 				});
 			}  catch(e) {} finally{}	;
 		} /*end else*/
-			
-	var container = document.querySelector('.grid');
-	var msnry;
-// Инициализация Масонри, после загрузки изображений
 
-	$('.grid').masonry({
+$('#container').masonry('reload');		
+	var container = document.querySelector('#container');
+	var msnry;
+	imagesLoaded( container, function() {
+// Инициализация Масонри, после загрузки изображений
+	$('#container').masonry({
 // указываем элемент-контейнер в котором расположены блоки для динамической верстки
 	  itemSelector: '.grid-item',
 // указываем класс элемента являющегося блоком в нашей сетке
@@ -120,6 +125,7 @@ $(function() {
 	      duration: 500 
 	  }
 // опции анимации - очередь и продолжительность анимации
+	}); 
 	}); 
 
 };
@@ -146,4 +152,29 @@ $(function() {
 });											
 })(jQuery);
 	
-	
+/*	<script type="text/javascript">
+  $(document).ready(function(){ 
+	var container = document.querySelector('.grid');
+var msnry;
+// Инициализация Масонри, после загрузки изображений
+imagesLoaded( container, function() {
+	$('.grid').masonry({
+// указываем элемент-контейнер в котором расположены блоки для динамической верстки
+	  itemSelector: '.grid-item',
+// указываем класс элемента являющегося блоком в нашей сетке
+          singleMode: false,
+// true - если у вас все блоки одинаковой ширины
+	  isResizable: true,
+// перестраивает блоки при изменении размеров окна
+	  isAnimated: true,
+// анимируем перестроение блоков
+          animationOptions: { 
+	      queue: false, 
+	      duration: 500 
+	  }
+// опции анимации - очередь и продолжительность анимации
+	}); 
+  });
+	});
+</script>
+*/

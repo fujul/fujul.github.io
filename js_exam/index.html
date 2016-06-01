@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
 		<meta name="viewport" content="  width=device-width,  initial-scale=1,  minimum-scale=1,   maximum-scale=1,    user-scalable=0" />
         <title>js_final_exam</title>
-		<!--link rel="stylesheet"  href="css/reset.css"-->
-		<link rel="stylesheet"  href="css/dist/styles.min.css">
+		<link rel="stylesheet"  href="css/src/reset.css">
+		<link rel="stylesheet"  href="css/src/styles.css">
 		<!--[if lt IE 9]>
-		<link rel="stylesheet"  href="css/dist/styles_ie8_ie9.min.css">
+		<link rel="stylesheet"  href="css/src/styles_ie8_ie9.css">
 		<![endif]-->
 		<!-- css3-mediaqueries.js for IE less than 9 -->
 		<!--[if lt IE 9]>
@@ -21,36 +21,35 @@
 		<![endif]-->
 		<script type="text/javascript" src="js/jquery.js"></script>
 			<!--script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script-->
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
-		
+		<script type="text/javascript" src="js/imagesLoaded.pkgd.min.js"></script>
 		<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
-		 <!--script type="text/javascript" src="js/src/jcarousel.basic.js"></script-->
-		<script type="text/javascript" src="js/dist/script.main.js"></script>
+		 <script type="text/javascript" src="js/src/jcarousel.basic.js"></script>
+		<script type="text/javascript" src="js/src/script.js"></script>
+		<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 		
 		
 	</head>	
   <body>
-		<header class="header clearfix">
-			<img class="header_img" id="holiday_mobile1" src="img/holiday_mobile1.png" alt="">
-			<img class="header_img" id="holiday_tablet1" src="img/holiday_tablet1.png" alt="">
-			<img class="header_img" id="holiday1" src="img/holiday1.png" alt="">
-			<div class="header_ header_menu">
-						<ul class="menu">
-							<li class="menu__item"><a class="menu__link" href="">Log in</a></li>
-							<li class="menu__item"><a class="menu__link" href="">Sign up</a></li>
-						</ul>
-						<a href=""><h2>URLAUBSGLÜCK</h2></a>
-			</div>
-			<div class="header_ header_title">
-			<h2>URLAUBSGLÜCK</h2>
-			<a href=""><h1>Share your holiday dreams</h1></a>
-			<h5>And find the perfect partner to fullfill it</h5>
-			<a class="button_link header_link" href=""><p>Find your holiday partner</p></a>
-			</div>
-		</header>
+		<div id="site">
+			<header class="header clearfix">
+				<div class="header_menu">
+							<ul class="menu">
+								<li class="menu__item"><a class="menu__link" href="">Log in</a></li>
+								<li class="menu__item"><a class="menu__link" href="">Sign up</a></li>
+							</ul>
+							<a class="link_text_menu" href=""><h2>URLAUBSGLÜCK</h2></a>
+				</div>
+				<div class="header_title">
+				<h2>URLAUBSGLÜCK</h2>
+				<a href=""><h1>Share your holiday dreams</h1></a>
+				<h5>And find the perfect partner to fullfill it</h5>
+				<a class="button_link header_link" href=""><p>Find your holiday partner</p></a>
+				</div>
+			</header>
+		</div>
 		<main  class="main clearfix">
 			<h3>How Urlaubsglück works?</h3>
-			<div class="main_1 clearfix">	
+			<div class="main_1 clearfix ">	
 				<div class="main_ main_11 clearfix">	
 					<a href=""><img class="main_img" id="img_step1_mobile" src="img/mobile/step1.png" alt=""></a>
 					<!--a href=""><img class="main_img" id="img_step1_notmobile" src="img/not_mobile/step1.png" alt=""></a-->
@@ -85,7 +84,7 @@
 													<a href="" class="jcarousel-control-prev"></a>
 													<a href="" class="jcarousel-control-next"></a>
 							</div>
-					<div class="main_for_img">
+					<div class="main_for_img main_for_img2">
 					<a class="button_link step_link" href=""><h4>S T E P 2</h4></a>
 					<h2>Morbi velit risus</h2>
 					<h6>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</h6>
@@ -107,7 +106,7 @@
 					</div>
 					<div class="main_for_img">
 					<a class="button_link step_link" href=""><h4>S T E P 3</h4></a>
-					<h2>Sed leo enim,condimentum</h2>
+					<h2>Sed leo enim,<br>condimentum</h2>
 					<h6>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</h6>
 					</div>
 				</div>	
@@ -124,17 +123,7 @@
 					<h6>Based in Chicago. I love playing tennis and loud music.</h6>
 					</div>
 				</div>
-				<div class="main_ main_21 clearfix">	
-					<div class="main_for_icons">
-					<a href=""><img class="main2_img" src="img/partner2.png" alt=""></a>
-					<a href=""><img class="icons" src="img/icons/partners2.png" alt=""></a>
-					</div>
-					<div class="main_2_for_img">
-					<a href=""><p>Lucas Marsha</p></a>
-					<h6>I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</h6>
-					</div>
-				</div>
-				<div class="main_ main_21 clearfix">	
+				<div class="main_ main_21 clearfix" id="heather_walker1">	
 					<div class="main_for_icons">
 					<a href=""><img class="main2_img" src="img/partner3.png" alt=""></a>
 					<a href=""><img class="icons" src="img/icons/partners3.png" alt=""></a>
@@ -144,7 +133,27 @@
 					<h6>I'm a happy person that loves cats and climbing on mountains.</h6>
 					</div>
 				</div>	
-				<div class="main_ main_21 clearfix">	
+				<div class="main_ main_21 clearfix" id="lucas_marsha">	
+					<div class="main_for_icons">
+					<a href=""><img class="main2_img" src="img/partner2.png" alt=""></a>
+					<a href=""><img class="icons" src="img/icons/partners2.png" alt=""></a>
+					</div>
+					<div class="main_2_for_img">
+					<a href=""><p>Lucas Marsha</p></a>
+					<h6>I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</h6>
+					</div>
+				</div>
+				<div class="main_ main_21 clearfix" id="heather_walker2">	
+					<div class="main_for_icons">
+					<a href=""><img class="main2_img" src="img/partner3.png" alt=""></a>
+					<a href=""><img class="icons" src="img/icons/partners3.png" alt=""></a>
+					</div>
+					<div class="main_2_for_img">
+					<a href=""><p>Heather Walker</p></a>
+					<h6>I'm a happy person that loves cats and climbing on mountains.</h6>
+					</div>
+				</div>	
+				<div class="main_ main_21 clearfix" id="bradley_hunter">	
 					<div class="main_for_icons">
 					<a href=""><img class="main2_img" src="img/partner4.png" alt=""></a>
 					<a href=""><img class="icons" src="img/icons/partners4.png" alt=""></a>
@@ -159,7 +168,7 @@
 			<h3>Discover holiday activity ideas</h3>
 				
 			<div class="main_3 clearfix">	
-				<div class="grid" id="grid_plagin">
+				<div class="grid" id="container">
 				
 			
 
@@ -191,7 +200,7 @@
 							</ul>				
 			</div>
 			<div class="footer_el">
-			<a class="footer_h5" href=""><h5>Partners</h5></a>	
+			<a class="footer_h5 footer_h5_2" href=""><h5>Partners</h5></a>	
 			</div>
 			</div>
 			<div class="footer_logo">
