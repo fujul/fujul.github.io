@@ -104,7 +104,7 @@ $(function() {
 			}  catch(e) {} finally{}	;
 		} /*end else*/
 
-$('#container').masonry('reload');		
+//$('#container').masonry('reload');		
 	var container = document.querySelector('#container');
 	var msnry;
 // Инициализация Масонри, после загрузки изображений
