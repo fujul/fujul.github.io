@@ -1,3 +1,4 @@
+
 (function($) {
 $(function() {
 	
@@ -13,25 +14,27 @@ $(function() {
 			tegParent.appendChild(teg_grid_item);	
 			tegParent=document.querySelector('#grid-item'+i+'');
 			var teg = document.createElement('div');
-			teg.className = 'g_i_1';
-			tegParent.appendChild(teg);	
-			var tegParent1=document.querySelector('#grid-item'+i+' .g_i_1');
-			teg = document.createElement('a');
+			/*teg.className = 'g_i_1';
+			tegParent.appendChild(teg);	*/
+			var tegParent1=document.querySelector('#grid-item'+i+'');
+		/*	teg = document.createElement('a');
 			teg.className = 'a_1';
 			teg.setAttribute('href',imageurl);
-			tegParent1.appendChild(teg);	
-			tegParent=document.querySelector('#grid-item'+i+' .a_1');
+			tegParent1.appendChild(teg);	*/
+			tegParent=document.querySelector('#grid-item'+i+'');
 			var teg_img = document.createElement('img');
 			teg_img.className = 'img';
 			teg_img.setAttribute('src',imageurl);
 			tegParent.appendChild(teg_img);	
 			
-			$(teg_img).width($(teg_img).width()*3);
-			if (v===1){$(teg_img).height($(teg_img).height()*3)};
+			/*$(teg_img).width($(teg_img).width()*3);
+			if (v===1){$(teg_img).height($(teg_img).height()*3)};*/
 			
-			$(tegParent1).width($(teg_img).width());
+			/*$(tegParent1).width($(teg_img).width());
 			$(tegParent1).height($(teg_img).height());
-			tegParent=document.querySelector('#grid-item'+i+' .g_i_1');
+			*/
+			
+			/*tegParent=document.querySelector('#grid-item'+i+' .g_i_1');
 			teg = document.createElement('div');
 			teg.className = 'g_i_2';
 			tegParent.appendChild(teg);	
@@ -45,13 +48,14 @@ $(function() {
 			teg.className = 'h_2';
 			if (poisk==''){var text1='images'}else{var text1=poisk};
 			teg.innerHTML=text1;
-			tegParent.appendChild(teg);	
-			$(tegParent2).width($(teg_img).width());
+			tegParent.appendChild(teg);	*/
+			
+		/*	$(tegParent2).width($(teg_img).width());
 			$(tegParent2).height($(teg_img).height());
 			$(teg).width($(teg_img).width());
 			$(teg).height($(teg_img).height());
 			$(teg_grid_item).width($(teg_img).width());
-			$(teg_grid_item).height($(teg_img).height());
+			$(teg_grid_item).height($(teg_img).height());*/
 			
 		};
 		
@@ -89,45 +93,83 @@ $(function() {
 							 dom(item.imageurl,i,1)		
 						});	
 					})
-				//};
+				
+					//$('#container').masonry('reload');		
+					var container = document.querySelector('#container');
+					var msnry;
+				// Инициализация Масонри, после загрузки изображений
+					$('#container').masonry({
+				// указываем элемент-контейнер в котором расположены блоки для динамической верстки
+						itemSelector: '.grid-item',
+				// указываем класс элемента являющегося блоком в нашей сетке
+					 columnWidth: 200,
+					 singleMode: false,
+				// true - если у вас все блоки одинаковой ширины
+						isResizable: true,
+				// перестраивает блоки при изменении размеров окна
+						isAnimated: true,
+				// анимируем перестроение блоков
+									animationOptions: { 
+								queue: false, 
+								duration: 500 
+						}
+				// опции анимации - очередь и продолжительность анимации
+					});
+				
+				
 			});					
 		} catch(e){}			
 		}else{
 				//alert('search_8');
 			try{
+				$(document).ready(function() {
 				$.getJSON('http://api.pixplorer.co.uk/image?word='+(poisk||'images')+'&amount=7',
 				function(data){
 					$.each(data.images, function(i, val){
 						dom(val.imageurl,i,2);					
 					});								
 				});
+			/*	*/
+			var $container = $("#container");
+	$container.imagesLoaded(function () {
+					
+			$container.masonry({
+			columnWidth: ".grid-item",
+			itemSelector: ".grid-item",
+			singleMode: false,
+			isResizable: true,
+			isAnimated: true,
+			animationOptions: { 
+								queue: false, 
+								duration: 500 
+						}
+		});
+		$(".grid-item").imagefill();
+	});
+	
+	});
+		/*	*/
 			}  catch(e) {} finally{}	;
 		} /*end else*/
 
-//$('#container').masonry('reload');		
-	var container = document.querySelector('#container');
-	var msnry;
-// Инициализация Масонри, после загрузки изображений
-	$('#container').masonry({
-// указываем элемент-контейнер в котором расположены блоки для динамической верстки
-	  itemSelector: '.grid-item',
-// указываем класс элемента являющегося блоком в нашей сетке
-	 columnWidth: 200,
-          singleMode: false,
-// true - если у вас все блоки одинаковой ширины
-	  isResizable: true,
-// перестраивает блоки при изменении размеров окна
-	  isAnimated: true,
-// анимируем перестроение блоков
-          animationOptions: { 
-	      queue: false, 
-	      duration: 500 
-	  }
-// опции анимации - очередь и продолжительность анимации
-	}); 
+	
+	/*$(document).ready(function() {
+
+	var $container = $(".grid");
+	$container.imagesLoaded(function () {
+		$container.masonry({
+			columnWidth: ".grid-item",
+			itemSelector: ".grid-item"
+		});
+		$(".grid-item").imagefill();
+	});
+	
+	});*/
+	
+	
 };
 	
-	Search('images');
+	Search('');
 	var link_poisk=document.querySelector('#poisk_link1');
 
 	function handler(event){
